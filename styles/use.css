@@ -1,0 +1,30 @@
+*{ border: 0; margin: 0; padding: 0; box-sizing: border-box; }
+:root
+    { --whitepink: rgb(253, 225, 248);
+    --brightPink: rgb(252, 139, 222); 
+    --dkgreen: rgb(16, 74, 2);
+    --green: rgb(25, 112, 3);
+    --limegreen: rgb(186, 241, 90); 
+    --wheat: rgb(243, 240, 199);
+    --transparentwheat9: rgba(243, 240, 199, 0.9);
+    --transparentwheat7: rgba(243, 240, 199, 0.7);
+    --transparentwheat6: rgba(243, 240, 199, 0.6);    
+    --transparentwheat3: rgba(243, 240, 199, 0.3);
+    --lgtbrwn: rgb(129, 115, 80);
+    --mbrwn: rgb(94, 83, 56);
+    --dkbrwn: rgb(62, 52, 27);
+    --paleyellow: rgb(250, 244, 160);
+    --gold: rgb(255, 209, 2);
+    --dkgold: rgb(200, 148, 3);
+    --ltgrey: rgb(168, 168, 166);
+    --mgrey: rgb(131, 131, 129);
+    --grey: rgb(60, 60, 58);
+    --brightblue: #0929dd;
+    --skyblue: #6be6f6;
+    --dkred: #8b0808; 
+    /* this artist's colors:  */
+    --color1: #058b9d;
+    --color2: rgb(94, 83, 56); 
+    --dkcolor1: #036a78;
+    --dkcolor2: rgb(62, 52, 27); }
+    body { font-family: Verdana; background-color: var(--wheat); }

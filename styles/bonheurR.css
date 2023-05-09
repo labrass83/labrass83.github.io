@@ -1,0 +1,134 @@
+*{ border: 0; margin: 0; padding: 0; box-sizing: border-box; }
+:root
+    { --whitepink: rgb(253, 225, 248);
+    --brightPink: rgb(252, 139, 222); 
+    --dkgreen: rgb(16, 74, 2);
+    --green: rgb(25, 112, 3);
+    --limegreen: rgb(186, 241, 90); 
+    --wheat: rgb(243, 240, 199);
+    --transparentwheat9: rgba(243, 240, 199, 0.9);
+    --transparentwheat7: rgba(243, 240, 199, 0.7);
+    --transparentwheat6: rgba(243, 240, 199, 0.6);    
+    --transparentwheat3: rgba(243, 240, 199, 0.3);
+    --lgtbrwn: rgb(129, 115, 80);
+    --mbrwn: rgb(94, 83, 56);
+    --dkbrwn: rgb(62, 52, 27);
+    --paleyellow: rgb(250, 244, 160);
+    --gold: rgb(255, 209, 2);
+    --dkgold: rgb(200, 148, 3);
+    --ltgrey: rgb(168, 168, 166);
+    --mgrey: rgb(131, 131, 129);
+    --grey: rgb(60, 60, 58);
+    --brightblue: #0929dd;
+    --skyblue: #6be6f6;
+    --dkred: #8b0808; 
+    /* this artist's colors:  */
+    --color1: #058b9d;
+    --color2: rgb(94, 83, 56); 
+    --dkcolor1: #036a78;
+    --dkcolor2: rgb(62, 52, 27); }
+
+body { width: 100vw; font-family: Arial; color: var(--color2);
+    transition: all 500ms ease-in-out; } 
+#bg-pic { height: 90vh; width: 100vw; z-index: 1; margin-top: 2.3em;
+    background-image: url(/images/bonheurR/display/bisonSnow.jpg);
+    background-size: cover; background-position: 44% 0; 
+    background-repeat: no-repeat; position: fixed; top: 7%; }
+#links { height: 2em; list-style-type: none; display: flex; 
+    position: sticky; top: 0; z-index: 3; background-color: var(--wheat); }
+#home, #aList { text-decoration: none; margin: .2em 0 .4em 1em;    
+    font-size: .85em; color: var(--color2); font-weight: bold; letter-spacing: .08em; display: flex; justify-content: center; 
+    align-items: center; background-color: var(--wheat);
+    text-shadow: .06em .09em .06em var(--ltgrey);     
+    border: .1em solid var(--dkcolor2); border-radius: .4em; }
+#home { width: 6em; }
+#aList { width: 8em; }
+#links a:hover { color: var(--wheat); background-color: var(--color1); }
+#title { padding: .1em .4em .12em; z-index: 3;
+    font-size: 2em; font-weight: bold; text-align: center; 
+    color: var(--color1); letter-spacing: .07em; 
+    text-shadow: .03em .03em .04em var(--dkcolor1); 
+    position: sticky; top: 1em; background-color: var(--wheat); 
+    border-top: .1em solid var(--color1); border-bottom: .1em solid var(--color1); } 
+
+#freeRules { height: 5.5em; color: var(--dkcolor2); 
+    font-size: .64em; font-family:'Times'; font-weight: bold; position: relative; z-index: 2; text-align: center; 
+    padding: .45em .7em; border: .4em ridge var(--color2);
+    background-color: var(--wheat); }
+#freeRules span { font-size: 1.25em; text-align: center; 
+    font-family: Arial; color: var(--color2); 
+    text-shadow: .06em .07em .06em var(--dkcolor2); }
+
+#materials { position: relative; z-index: 2; margin-top: 2vh; } 
+#materials h1 { margin-top: 2vh; padding: 1.5vh 1em; 
+    color: var(--color1); font-size: 1.4em; letter-spacing: .09em;
+    text-shadow: .05em .01em .0em var( --dkcolor1); }
+#materials li { padding: 1.5vh 2em; list-style-type: none; font-size: 1.2em; text-shadow: .05em .01em .0em var( --wheat); }
+#materials a { text-decoration-line: none; font-size: 1em; font-weight: bold; letter-spacing: .05em; color: var(--color2); }
+#materials a:hover { color: var(--dkgold); }
+#bios a:nth-last-child(1), #display a:nth-last-child(1) { padding-bottom: 2vh; }
+#teach a:nth-last-child(1) { padding-bottom: 12vh; }
+
+h2 { position: fixed; bottom: 0; height: 2.5em; width: 100vw;
+    z-index: 3; padding: .5em 4vw; background-color: var(--wheat); 
+    font-size: .8em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); text-shadow: .01em .01em .01em black;
+    border-top: .2em solid var(--color1); }
+
+@media only screen and (min-width: 360px) {
+    #bg-pic { background-position: 48% 0; margin-top: 1.5em;}
+    #freeRules { height: 5.5em; font-size: .73em; } 
+    #materials h1 { margin-top: 3vh; font-size: 1.5em;      
+            letter-spacing: .12em; }
+    #materials a { font-size: 1.2em; }
+    h2 { font-size: 1em; } }
+@media only screen and (min-width: 414px) {
+    #bg-pic { margin-top: 1em; }
+    #materials h1 { font-size: 1.7em; }
+    #materials a { font-size: 1.5em; }
+    h2 { font-size: 1.3em; } }
+@media only screen and (min-width: 480px) {
+    #bg-pic { background-position: 44% 0; }
+    #freeRules { font-size: .95em; } 
+    h2 { font-size: 1.1em; } }
+@media only screen and (min-width: 800px) {
+    #bg-pic { background-position: 30% 50%; }
+    #freeRules { height: 4.5em; font-size: .83em; } 
+    #materials { margin-top: 4vh; } 
+    #materials h1 { margin-top: 0; font-size: 1.5em; letter-spacing: .07em; }
+    #materials a { font-size: 1.2em; letter-spacing: .07em; }
+    h2 { height: 2.2em; font-size: 1.2em; padding: .4em 4vw; } }
+@media only screen and (min-width: 854px) {
+    #freeRules { height: 4.4em; font-size: .87em; } 
+    h2 { height: 2em; font-size: 1.2em; padding: .2em 4vw; } }
+@media only screen and (min-width: 960px) {
+    #freeRules { font-size: .98em; } }
+@media only screen and (min-width: 1024px) {    
+    #links { height: 3em; }  
+    #home, #aList { margin: .2em 0 .3em 2em; font-size: 1.2em; 
+            letter-spacing: .2em; }
+    #home { width: 7em; }
+    #aList { width: 10em; }
+    #title { font-size: 2.5em; letter-spacing: .09em; 
+            padding: .07em .4em .14em; top: 1.2em; } 
+    #freeRules { font-size: 1.06em; } 
+    #materials h1 { font-size: 1.7em; letter-spacing: .08em; }
+    #materials a { font-size: 1.3em; letter-spacing: .075em; }
+    h2 { height: 2.2em; font-size: 1.3em; } }
+@media only screen and (min-width: 1366px) {
+    #bg-pic { background-position: 0 50%; } 
+    #title { padding: .1em .4em .17em; }
+    #freeRules { font-size: 1.4em; } 
+    #materials h1 { font-size: 2em; }
+    #materials a { font-size: 1.6em; }
+    h2 { height: 2.2em; font-size: 1.5em; } }
+@media only screen and (min-width: 1920px) {
+    #links { height: 4.2em; }
+    #home, #aList { font-size: 1.5em; }    
+    #home { width: 8em; }
+    #aList { width: 11em; }
+    #title { font-size: 3.3em; letter-spacing: .1em; 
+            padding: .2em .8em .34em; top: 1.3em; }
+    #freeRules { height: 3.4em; font-size: 1.42em; } 
+    #materials h1 { font-size: 2.5em; padding: 1vh 1.5em; }
+    #materials a { font-size: 1.9em; padding: 1vh 1.7em;}
+    h2 { font-size: 1.8em; } }

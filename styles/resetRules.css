@@ -1,0 +1,11 @@
+* {
+    border: 0; margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/* Importing go-to font: Lato from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Lato&display=swap');
+
+/* Standard rules to use 100% of time */
+body {
+    font-family: 'Lato', sans-serif;
+}
