@@ -1,68 +1,45 @@
-* { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
-:root
-    { --whitepink: rgb(253, 225, 248);
-    --brightPink: rgb(252, 139, 222); 
-    --dkred: #8b0808; 
-    --brightblue: #0929dd;
-    --skyblue: #6be6f6;
-    --dkgreen: rgb(16, 74, 2);
-    --green: rgb(25, 112, 3);
-    --limegreen: rgb(186, 241, 90); 
-    --paleyellow: rgb(250, 244, 160);
-    --brightyellow: rgb(255, 242, 0); 
-    --gold: rgb(255, 209, 2);
-    --dkgold: rgb(200, 148, 3);
-    --transparentwheat7: rgba(243, 240, 199, 0.7);
-    --transparentwheat6: rgba(243, 240, 199, 0.6);    
-    --transparentwheat3: rgba(243, 240, 199, 0.3);
-    --grey: rgb(60, 60, 58); }
-
-/* ---------- begin base code - all sizes ---------- */
-
 body { max-height: 100%; font-family: verdana; font-weight: bold; 
     text-align: center; background-position: center; background-repeat: no-repeat; }
 #wall { height: 96vh; font-size: 1em; color: var(--brightyellow);
     background-image: linear-gradient(160deg, rgb(174, 218, 240), rgb(34, 95, 131)); position: relative; /*footer is absolute */ padding: 4vh 2vw; }
-#logo { height: 6.09em; width: 17.19em; 
+#logo { height: 6.25em; width: 16.56em; 
     margin: 0 auto; /* horizontally centers */ 
     background-image: url(/images/labELhome/labElLogo2.jpg); 
     background-size: cover; background-position: center 75%;  
     outline: .75vh outset rgba(13, 66, 93, .05); }
 #logoHeader h1 { display: none; }
-#titleSmallDev { letter-spacing: 5px; font-size: 3.9vh; 
-    text-shadow: 3px 4px 2px rgb(34, 95, 131); 
-    margin: 2vh 2vw; margin-bottom: 3vh; }
-#titleSmallDev span { font-size: 2.3vh; letter-spacing: 2px;}
+#titleSmallDev { letter-spacing: 5px; font-size: .9em; 
+    text-shadow: 3px 2px 2px rgb(34, 95, 131); 
+    margin: 2vh 2vw; }
+#titleSmallDev span { font-size: .6em; letter-spacing: 2px; }
 
-#choices { width: 100%; height: 20.31em; 
-    display: flex; Flex-wrap: wrap; }
+#choices { width: 100%; height: 15.81em; 
+    display: flex; Flex-wrap: wrap; margin-top: 1.2em; }
 #choices a { text-decoration-line: none; }
 #choices p { /* Hyperlink Title "Plates" */ width: 74%; 
+    margin: 0 auto; margin-top: 9%; 
     color: var(--gold); text-shadow: 3px 2px 2px rgb(21, 14, 1);
-    margin: 0 auto; margin-top: 10%; background-color: rgba(108, 78, 7, .4); border-radius: .75vh; padding: 9%; }
-
+    font-size: .9em; 
+    background-color: rgba(108, 78, 7, .4); border-radius: .75vh; padding: 9%; }
 #awana, #guitar, #artists, #scouting, #calendar {
-    height: 6.25em; width: 9.69em; background-size: cover; 
+    height: 4.5em; width: 7em; background-size: cover; 
     margin: 0 auto; /* horizontally centers */ 
     outline: .5vh outset rgba(13, 66, 93, .05); }
-
 #awana { /* When there is material offered (live) change to :     background-image: url(../images/labELhome/awanaFramed.jpg); */
     background-image: url(../images/labELhome/awanaFramedPale.jpg); }
-        
 #guitar {  /* change */ background-image: url(../images/labELhome/guitarFramedPale.jpg); }
-        
 #artists { background-image: url(../images/labELhome/butterflyFramed.jpg); }
-        
 #scouting { /* background-image: url(../images/labELhome/scoutingFramed.jpg); */    
     background-image: url(../images/labELhome/ahgFramedPale.jpg); }
-            
 #calendar { /* background-image: url(../images/labELhome/calendarFramed.jpg); */ 
     background-image: url(../images/labELhome/calendarFramedPale.jpg); }
 
-footer nav { letter-spacing: .25em; }
-footer nav a { color:rgb(179, 187, 190); text-decoration: none; 
-    padding: 1.7vh 2.5vw; position: absolute; left: 6vw; top: 89%;
-    background-color:rgb(13, 66, 93); border-radius: 4px;}
+footer nav { font-size: .7em; letter-spacing: .1em; }
+footer nav a { color: rgb(179, 187, 190); text-decoration: none; 
+    padding: .65em .75em; position: absolute; left: 6vw; top: 89%;
+    background-color:rgb(13, 66, 93); border-radius: 4px; }
+footer nav a:hover { color: var(--dkteal); 
+    background-color: var(--brightyellow); }
 footer #outlet { position: absolute; top: 89%; right: 4vw;  
     background: no-repeat url(../images/labELhome/outlet.jpg);
     background-size: contain; background-size: 4vh;
@@ -70,114 +47,135 @@ footer #outlet { position: absolute; top: 89%; right: 4vw;
 
 #floor { height: 5vh; background-image: linear-gradient( 40deg, rgb(255, 248, 234), rgb(177, 153, 97)); }
 
-@media only screen and (min-width: 220px) { 
-#logo { height: 4.5em; width: 10em; }
-#titleSmallDev { letter-spacing: 5px; font-size: 1.7vh; }
-#titleSmallDev span { font-size: 1.5vh; letter-spacing: 1px; }
-#choices { height: 18.75em; } 
-#choices p { margin-top: .56em; padding: 9%; font-size: .88em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 4.38em; width: 6.25em; } } 
-
-@media only screen and (min-width: 300px) { 
-#logo { height: 6.25em; width: 16.56em; }
-#titleSmallDev { font-size: 2.5vh; }
-#titleSmallDev span { font-size: 1.5vh; letter-spacing: 2px; }
-#choices { height: 20.81em; } 
-#choices p { margin-top: 9%; padding: 9%; font-size: 1.13em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 5.63em; width: 8.75em; } } 
-
-@media only screen and (min-width: 375px) { 
-#logo { height: 6em; width: 18em; background-position: center 58%; }
-#titleSmallDev { font-size: 3vh; }
-#titleSmallDev span { font-size: 1.7vh; letter-spacing: 2px; }
-#choices { height: 20.63em; }   
-#choices p { margin-top: 8.5%; padding: 9%; font-size: 1.15em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 5.69em; width: 8.81em; } } 
-    
+@media only screen and (min-width: 360px) { 
+    #logo { height: 6em; width: 18em; 
+        background-position: center 58%; }
+    #titleSmallDev { font-size: 1em; }
+    #titleSmallDev span { font-size: 1.7vh; }
+    #choices { height: 22.63em; }   
+    #choices p { margin-top: 8.5%; font-size: 1.1em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 6.3em; width: 9.5em; } 
+    footer nav { font-size: .9em; letter-spacing: .2em; } } 
+@media only screen and (min-width: 375px) {
+    #logo { height: 7em; width: 19em; } 
+    #titleSmallDev { font-size: .95em; }
+    #choices { height: 23em; margin-top: 1.5em; }  
+    #choices p { margin-top: 9%; font-size: 1.15em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 6.4em; width: 9.8em; } } 
 @media only screen and (min-width: 414px) { 
-#logo { height: 7.5em; width: 22.5em; }
-#titleSmallDev { font-size: 4vh; }
-#titleSmallDev span { font-size: 2.4vh; letter-spacing: 2px; }
-#choices { height: 24.69em; } 
-#choices p { margin-top: .813em; padding: 9%; font-size: 1.313em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 6.69em; width: 10.31em; } } 
-
-@media only screen and (min-width: 518px) { 
-#choices { height: 30em; } 
-#choices p { margin-top: .88em; padding: 9%; font-size: 1.6em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 9.2em; width: 14em; } } 
-
-@media only screen and (min-width: 598px) {
-#logo { height: 9em; width: 33em; background-position: center 57%; }    
-#choices { height: 34em; }
-#choices p { margin-top: .89em; padding: 9%; font-size: 1.9em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 9.9em; width: 15.5em; } }
-
-@media only screen and (min-width: 610px) { 
-#logo { height: 7.5em; width: 22.5em; }
-#titleSmallDev { font-size: 4vh; }
-#titleSmallDev span { font-size: 2.4vh; letter-spacing: 2px; }
-#choices { height: 34em; } 
-#choices p { margin-top: .9em; padding: 9%; font-size: 1.75em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 10.3em; width: 16em; } } 
-
+    #logo { height: 8.4em; width: 22.5em; }
+    #titleSmallDev { font-size: 2.2em; }
+    #titleSmallDev span { font-size: .7em; }
+    #choices { height: 27.69em; margin-top: 2.3em; } 
+    #choices p { margin-top: .65em; font-size: 1.3em; } 
+    #awana, #guitar, #artists, #scouting, #calendar { height: 7.1em; width: 10.8em; } 
+    footer nav { font-size: 1.3em; letter-spacing: .2em; } } 
+@media only screen and (min-width: 480px) { 
+    #titleSmallDev { font-size: 1.4em; }
+    #titleSmallDev span { font-size: .7em; }    
+    #choices { height: 29em; margin-top: 2em; } 
+    #choices p { font-size: 1.6em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 8.1em; width: 12.5em; } 
+    footer nav { font-size: 1.1em; letter-spacing: .25em; } } 
+@media only screen and (min-width: 481px) { 
+    #logo { height: 6em; width: 22.5em; }
+    #titleSmallDev { font-size: 1.2em; }
+    #choices { height: 25em; margin-top: 1em; } 
+    #choices p { font-size: 1.4em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+            { height: 7.1em; width: 11em; } 
+    footer nav { font-size: 1em; letter-spacing: .2em; } } 
 @media only screen and (min-width: 800px) {
-#ceiling { height: 3vh; background-image: linear-gradient(160deg, rgb(255, 255, 255), rgb(201, 200, 200)); }
-#wall { height: 91vh; padding: 6vh 2vw; }
-#logoHeader { height: 20vh; display: flex; }
-#logo { height: 8em; width: 14.5em; background-image: url(/images/labELhome/labElLogo2Framed+blackMed12.jpg); margin-right: 1vw; margin-top: 1.5vh; }
-#titleSmallDev { font-size: 5.2vh; width: 57vw; }
-#titleSmallDev span { font-size: 2.9vh; font-style: italic; }
-#choices { height: 22em; margin: 6% 0; }
-#choices p { margin-top: .8em; padding: 9%; font-size: 1.75em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 9em; width: 14em; }
-#scouting { margin-left: 19%; }
-#calendar { margin-right: 19%; }
-#floor { height: 6vh; } }
-    
-@media only screen and (min-width: 940px) {
-#ceiling { height: 2.5vh; }
-#wall { height: 91.5vh; padding: 6vh 2vw; }
-#logoHeader { height: 20vh; display: flex; }
-#logo { height: 10em; width: 18.5em; background-image: url(/images/labELhome/labElLogo2Framed+blackMed12.jpg); margin-right: 2vw; margin-top: .5vh; }
-#titleSmallDev { font-size: 5.2vh; width: 53vw; }
-#titleSmallDev span { font-size: 2.9vh; font-style: italic; }
-#choices { height: 25em; }
-#choices p { margin-top: .8em; padding: 9%; font-size: 1.75em; } 
-#awana, #guitar, #artists, #scouting, #calendar { height: 10.4em; width: 16em; } }
-
-
-@media only screen and (min-width: 1200px) {
-#wall { height: 91vh; padding: 6vh 4vw 6vh; }
-#logoHeader { height: 23%; margin: 1em auto; }
-#logoHeader h1 { display: flex; font-size: 3.7em; letter-spacing: .1em; 
-    text-shadow: 3px 4px 2px rgb(34, 95, 131); }
-#logo { height: 10.3em; width: 20em; margin: 0 auto; }
-#titleSmallDev { display: none; } /* only used when < 1200 */
-
-#choices { display: flex; justify-content: space-evenly; }
-#choices a { transition: all 500ms ease-in-out; }
-
-#awana, #guitar, #artists, #scouting, #calendar { 
-    background-repeat: no-repeat; margin: 0; } 
-/* #awana:hover, #guitar:hover,  */
-#artists:hover 
-/* #scouting:hover, #calendar:hover  */
-    { background-color: var(--gold); }
-
-#awana { height: 8em; width: 12.4em; }
-#guitar { height: 8em; width: 12.4em;  }
-
-#artists { height: 10.5em; width: 16em;   }
-#artists p { /* Hyperlink text "plate" */ margin-top: 20.5vh; 
-    padding: 1vh .75vw; background-color: rgb(108, 78, 7); }
-#artists p:hover { color:rgb(30, 84, 115); 
+    #ceiling { height: 3vh; background-image: linear-gradient(160deg, rgb(255, 255, 255), rgb(201, 200, 200)); }
+    #wall { height: 91vh; padding: 6vh 2vw; }
+    #logoHeader { height: 13vh; display: flex; }
+    #logo { height: 5em; width: 13em; margin-right: 3vw; margin-top: 1.5vh; }
+    #titleSmallDev { font-size: 1.8em; width: 59vw; }
+    #titleSmallDev span { font-style: italic; }
+    #choices { height: 18em; margin: 6% 0; }
+    #choices p { margin-top: .6em; font-size: 1.55em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 7.7em; width: 12em; }
+    #scouting { margin-left: 19%; }
+    #calendar { margin-right: 19%; }
+    footer nav { font-size: .9em; letter-spacing: .1em; }
+    footer #outlet { right: -2vw; }
+    #floor { height: 6vh; }  }
+@media only screen and (min-width: 854px) {
+    #ceiling { height: 2.5vh; }
+    #wall { height: 91.5vh;  }
+    #logoHeader { height: 15vh; }
+    #logo { height: 5em; width: 18.5em; margin-right: 2vw; margin-top: .5vh; }
+    #titleSmallDev { width: 53vw; }
+    #titleSmallDev span { font-size: .7em; }
+    #choices { margin: 4% 0; }
+    #choices p { margin-top: .8em; font-size: 1.4em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 8em; width: 12.5em; } }
+@media only screen and (min-width: 960px) {
+    #titleSmallDev { font-size: 1.8em; width: 53vw; margin: .1em 2vw; }
+    #titleSmallDev span { font-size: .7em; }
+    #choices { height: 21em; margin: 2% 0; }
+    #choices p { font-size: 1.7em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 9.5em; width: 14.5em; } }
+@media only screen and (min-width: 1024px) {
+    #wall { height: 91vh; padding: 3vh 4vw 5vh; }
+    #logoHeader { height: 27%; margin: 1em auto; }
+    #logoHeader h1 { display: flex; letter-spacing: .2em; 
+    font-size: 3em; text-shadow: 3px 4px 2px rgb(34, 95, 131); }
+    #logo { height: 8em; width: 15em; margin: 0 auto; 
+    background-image: url(/images/labELhome/labElLogo2Framed+blackMed12.jpg);}
+    #titleSmallDev { display: none; } /* only used when < 1024 */
+    #choices { height: 21em; margin: 2% 0; }
+    #choices p { font-size: 1.7em; } 
+    #awana, #guitar, #artists, #scouting, #calendar 
+        { height: 9.5em; width: 14.5em; } 
+    footer nav { font-size: 1em; letter-spacing: .2em; } }        
+@media only screen and (min-width: 1366px) {
+    #wall { padding: 5vh 4vw 6vh; }
+    #logoHeader { height: 34%; }
+    #logoHeader h1 { font-size: 3.7em; letter-spacing: .25em; 
+        margin-top:.1em; }
+    #logo { height: 10.5em; width: 20em; }
+    #choices { display: flex; justify-content: space-evenly; }
+    #choices a { transition: all 500ms ease-in-out; }
+    #awana, #guitar, #artists, #scouting, #calendar { margin: 0; } 
+    /* #awana:hover, #guitar:hover, #scouting:hover, #calendar:hover */ #artists:hover { background-color: var(--gold); }
+    #awana { height: 8em; width: 12.4em; }
+    #guitar { height: 8em; width: 12.4em;  }
+    #artists { height: 10.5em; width: 16em;   }
+    #artists p { /* Hyperlink text "plate" */ margin-top: 23.5vh;
+        padding: .2em .75em .4em; 
+        background-color: rgb(108, 78, 7); }
+    #artists p:hover { color:rgb(30, 84, 115); 
         text-shadow: 3px 2px 2px wheat; background-color: var(--gold); }
-
-#scouting { height: 8.1em; width: 12.4em; }
-#calendar { height: 8em; width: 12.4em; }
-
-footer nav { font-size: 1.5em; position: absolute; top: 87%; left: 0; }
-footer nav a { padding: .5em .75em; transition: all 500ms ease-in-out; }
-footer #outlet { position: absolute; top: 86%; padding-right: 4vw; }
-}
+    #scouting { height: 8.1em; width: 12.4em; }
+    #calendar { height: 8em; width: 12.4em; }
+    footer nav { font-size: 1.5em; }
+    footer nav a { padding: .5em .75em; transition: all 500ms ease-in-out; top: 85.5%; }
+    footer #outlet { top: 86%; padding-right: 4vw; right: 4vw; } }
+@media only screen and (min-width: 1920px) {
+    #wall { padding: 7vh 9vw 6vh; }
+    #logoHeader h1 { font-size: 4em; letter-spacing: .3em; }
+    #logo { height: 12em; width: 22em; }
+    #choices { height: 30em; margin: 2% 0; }
+    #choices a { transition: all 500ms ease-in-out; }
+    #awana, #guitar, #artists, #scouting, #calendar { margin: 0; } 
+    /* #awana:hover, #guitar:hover, #scouting:hover, #calendar:hover */ #artists:hover { background-color: var(--gold); }
+    #awana { height: 11em; width: 16.5em; }
+    #guitar { height: 11em; width: 16.5em; }
+    #artists { height: 14.5em; width: 22em;   }
+    #artists p { /* Hyperlink text "plate" */ margin-top: 23.5vh;
+        padding: .2em .75em .4em; 
+        background-color: rgb(108, 78, 7); }
+    #artists p:hover { color:rgb(30, 84, 115); 
+        text-shadow: 3px 2px 2px wheat; background-color: var(--gold); }
+    #scouting { height: 11em; width: 16.5em; }
+    #calendar { height: 11em; width: 16.5em; }
+    footer nav { font-size: 1.7em; }
+    footer nav a { padding: .5em .75em; transition: all 500ms ease-in-out; top: 87%; }
+    footer #outlet { top: 86%; padding-right: 4vw; right: 4vw; } }

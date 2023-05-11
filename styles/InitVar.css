@@ -1,0 +1,30 @@
+*{ border: 0; margin: 0; padding: 0; box-sizing: border-box; }
+:root
+    { 
+    --dkred: #8b0808; 
+    --whitepink: rgb(253, 225, 248);
+        --brightpink: rgb(252, 139, 222); 
+    --paleyellow: rgb(250, 244, 160);
+        --brightyellow: rgb(255, 242, 0);
+        --gold: rgb(255, 209, 2);
+        --dkgold: rgb(200, 148, 3);
+        --dkmustard: rgb(136, 111, 1);
+    --green: rgb(25, 112, 3);
+        --dkgreen: rgb(16, 74, 2);
+        --limegreen: rgb(186, 241, 90); 
+    --brightblue: #0929dd;
+        --skyblue: #6be6f6;
+        --teal: #07aec4; 
+        --dkteal: #036a78;
+    --grey: rgb(60, 60, 58);
+        --ltgrey: rgb(168, 168, 166);
+        --mgrey: rgb(131, 131, 129);
+    --wheat: rgb(243, 240, 199);
+        --transparentwheat9: rgba(243, 240, 199, 0.9);
+        --transparentwheat7: rgba(243, 240, 199, 0.7);
+        --transparentwheat6: rgba(243, 240, 199, 0.6);    
+        --transparentwheat3: rgba(243, 240, 199, 0.3);
+    --lgtbrwn: rgb(129, 115, 80);
+        --mbrwn: rgb(94, 83, 56);
+        --dkbrwn: rgb(62, 52, 27);
+}

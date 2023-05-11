@@ -1,141 +1,40 @@
-*{ border: 0; margin: 0; padding: 0; box-sizing: border-box; }
 :root
-    { --whitepink: rgb(253, 225, 248);
-    --brightPink: rgb(252, 139, 222); 
-    --dkgreen: rgb(16, 74, 2);
-    --green: rgb(25, 112, 3);
-    --limegreen: rgb(186, 241, 90); 
-    --wheat: rgb(243, 240, 199);
-    --transparentwheat9: rgba(243, 240, 199, 0.9);
-    --transparentwheat7: rgba(243, 240, 199, 0.7);
-    --transparentwheat6: rgba(243, 240, 199, 0.6);    
-    --transparentwheat3: rgba(243, 240, 199, 0.3);
-    --paleyellow: rgb(250, 244, 160);
-    --gold: rgb(255, 209, 2);
-    --dkgold: rgb(200, 148, 3);
-    --grey: rgb(60, 60, 58);
-    --brightblue: #0929dd;
-    --skyblue: #6be6f6;
-    --dkred: #8b0808; 
-    /* this artist's colors:  */
-    --color1: rgb(255, 209, 2);
-    --color2: #6be6f6; 
-    --dkcolor1: rgb(136, 111, 1);
-    --dkcolor2: #058b9d;}
+    {   /* this artist's colors:  */
+        --color1: var(--gold);
+        --color2: var(--skyblue); 
+        --dkcolor1: var(--dkmustard);
+        --dkcolor2: var(--teal); }
 
-body { width: 100vw; font-family: Arial; color: var(--color2);
-    transition: all 500ms ease-in-out; } 
-#bg-pic { height: 90vh; width: 100vw; z-index: 1; margin-top: 2.3em;
-    background-image: url(/images/homerW/display/1865Veteran.jpg);
-    background-size: cover; background-position: 33% 0; 
-    background-repeat: no-repeat; position: fixed; top: 7%; }
-#links { height: 2em; list-style-type: none; display: flex; 
-    position: sticky; top: 0; z-index: 3; background-color: var(--wheat); }
-#home, #aList { text-decoration: none; margin: .2em 0 .4em 1em;    
-    font-size: .85em; color: var(--color2); letter-spacing: .08em; 
-    text-shadow: .06em .13em .06em var(--dkcolor2);     
-    display: flex; justify-content: center; align-items: center; 
-    background-color: var(--wheat);
-    border: .1em solid var(--dkcolor2); border-radius: .4em; }
-#home { width: 6em; }
-#aList { width: 8em; }
-#links a:hover { color: var(--dkcolor2); background-color: var(--color1); }
-#title { padding: .1em .4em .12em; z-index: 3;
-    font-size: 2em; font-weight: bold; text-align: center; 
-    color: var(--color1); letter-spacing: .07em; 
-    text-shadow: .1em .1em .05em var(--dkcolor1); 
-    position: sticky; top: 1em; background-color: var(--wheat); 
-    border-top: .1em solid var(--color1); border-bottom: .1em solid var(--color1); } 
-
-#freeRules { height: 5.5em; color: var(--dkcolor2); 
-    font-size: .64em; font-family:'Times'; font-weight: bold; position: relative; z-index: 2; text-align: center; 
-    padding: .45em .7em; border: .4em ridge var(--color2);
-    background-color: var(--wheat); }
-#freeRules span { font-size: 1.25em; text-align: center; 
-    font-family: Arial; color: var(--color2); 
-    text-shadow: .06em .13em .06em var(--dkcolor2); }
-
-#materials { position: relative; z-index: 2; margin-top: 17vh; } 
-#materials h1 { margin-top: 2vh; padding: 1.5vh 1em; 
-    color: var(--color1); font-size: 1.4em; letter-spacing: .09em;
-    text-shadow: .18em .18em .13em var( --dkcolor1); }
-#materials li { padding: 1.5vh 2em; list-style-type: none; }
-#materials a { text-decoration-line: none; font-size: 1em; font-weight: bold; letter-spacing: .05em; color: var(--color2); }
+#bg-pic { margin-top: 2.3em; background-position: 33% 0; 
+    background-image: url(/images/homerW/display/1865Veteran.jpg); }
+#stickybar, #freeRules { background-color: var(--wheat); }
 #materials a:hover { color: var(--wheat); }
-#bio a:nth-last-child(1), #display a:nth-last-child(1) { padding-bottom: 2em; }
-#teach a:nth-last-child(1) { padding-bottom: 3.5em; }
-
-h2 { position: fixed; bottom: 0; height: 2.5em; width: 100vw;
-    z-index: 3; padding: .5em 4vw; background-color:rgb(113, 95, 12); 
-    font-size: .8em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); text-shadow: .18em .18em .13em black;
-    border-top: .2em solid var(--color1); }
+#materials { position: relative; z-index: 2; margin-top: 12vh; } 
+#materials h1 { margin-top: 2vh; }
+h2 { background-color:rgb(113, 95, 12); }
 
 @media only screen and (min-width: 360px) {
     #bg-pic { background-position: 40% 0; margin-top: 1.3em;}
-    #freeRules { height: 5.5em; font-size: .73em; } 
-    #materials { margin-top: 20vh; }
-    #materials h1 { margin-top: 3vh; font-size: 1.5em;      
-        letter-spacing: .12em; }
-    #materials a { font-size: 1.2em; }
-    h2 { font-size: .95em; } }
+    #materials { margin-top: 13vh; }
+    #materials h1 { margin-top: 3vh; } }
+@media only screen and (min-width: 375px) {
+    #materials { margin-top: 15vh; } }
 @media only screen and (min-width: 414px) {
     #bg-pic { background-position: 41% 0; margin-top: .6em; }
-    #freeRules { height: 5.7em; font-size: .83em; } 
-    #materials { margin-top: 20vh; } 
-    #materials h1 { font-size: 1.7em; }
-    #materials a { font-size: 1.5em; }
-    h2 { font-size: 1.1em; } }
+    #materials { margin-top: 16vh; } }
 @media only screen and (min-width: 480px) {
     #bg-pic { background-position: 37% 0; }
-    #freeRules { font-size: .95em; } 
-    #materials { margin-top: 18vh; } 
-    h2 { font-size: 1.1em; } }
+    #materials { margin-top: 16vh; } }
 @media only screen and (min-width: 800px) {
-    #freeRules { height: 4.5em; font-size: .83em; } 
     #materials { margin-top: 8vh; } 
-    #materials h1 { margin-top: 0; font-size: 1.5em; letter-spacing: .07em; }
-    #materials a { font-size: 1.1em; letter-spacing: .07em; }
-    #bio li:nth-last-child(1),
-    #display li:nth-last-child(1), #teach li:nth-last-child(1)
-     { padding-bottom: 2.5em; }  
-    h2 { height: 2.2em; font-size: 1em; padding: .4em 4vw; } }
-@media only screen and (min-width: 854px) {
-    #freeRules { height: 4.4em; font-size: .87em; } 
-    h2 { height: 2.3em; font-size: .8em; } }
-@media only screen and (min-width: 960px) {
-    #freeRules { font-size: .98em; } 
+    #materials h1 { margin-top: 0; } }
+@media only screen and (min-width: 854px) { }
+@media only screen and (min-width: 960px) { 
     #materials { margin-top: 13vh; } }
 @media only screen and (min-width: 1024px) {
     #bg-pic { background-position: 0 -30%; }  
-    #links { height: 3em; }  
-    #home, #aList { margin: .2em 0 .3em 2em; font-size: 1.2em; 
-        letter-spacing: .2em; }
-    #home { width: 7em; }
-    #aList { width: 10em; }
-    #title { font-size: 2.5em; letter-spacing: .09em; 
-        padding: .07em .4em .14em; } 
-    #freeRules { font-size: 1.06em; } 
-    #materials { margin-top: 12vh; } 
-    #materials h1 { font-size: 1.7em; letter-spacing: .08em; }
-    #materials a { font-size: 1.3em; letter-spacing: .075em; }
-    h2 { height: 2.4em; font-size: 1.06em; } }
+    #materials { margin-top: 12vh; } }
 @media only screen and (min-width: 1366px) {
-    #bg-pic { background-position: 0 0; } 
-    #title { padding: .1em .4em .17em; }
-    #freeRules { font-size: 1.4em; } 
-    #materials { margin-top: 13vh; } 
-    #materials h1 { font-size: 2em; }
-    #materials a { font-size: 1.6em; }
-    h2 { height: 2.5em; font-size: 1.2em; } }
-@media only screen and (min-width: 1920px) {
-    #links { height: 4em; }
-    #home, #aList { font-size: 1.5em; }    
-    #home { width: 8em; }
-    #aList { width: 11em; }
-    #title { font-size: 3.3em; letter-spacing: .1em; 
-        padding: .2em .8em .34em; }
-    #freeRules { height: 3.4em; font-size: 1.42em; } 
-    #materials { margin-top: 22vh; } 
-    #materials h1 { font-size: 2.5em; }
-    #materials a { font-size: 1.9em; }
-    h2 { height: 2.3em; font-size: 1.7em; } }
+    #materials { margin-top: 13vh; } }
+@media only screen and (min-width: 1920px) { 
+    #materials { margin-top: 18vh; } } 
