@@ -37,7 +37,7 @@ body { max-height: 100%; font-family: verdana; font-weight: bold;
 footer nav { font-size: .7em; letter-spacing: .1em; }
 footer nav a { color: rgb(179, 187, 190); text-decoration: none; 
     padding: .65em .75em; position: absolute; left: 6vw; top: 89%;
-    background-color:rgb(13, 66, 93); border-radius: 4px; }
+    background-color: rgb(13, 66, 93); border-radius: 4px; }
 footer nav a:hover { color: var(--dkteal); 
     background-color: var(--brightyellow); }
 footer #outlet { position: absolute; top: 89%; right: 4vw;  

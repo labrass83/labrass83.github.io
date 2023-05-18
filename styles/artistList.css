@@ -1,29 +1,4 @@
-* { border: 0; margin: 0; padding: 0; box-sizing: border-box; }
-:root 
-    { --whitepink: rgb(253, 225, 248);
-    --brightPink: rgb(219, 6, 130); 
-    --dkred: #8b0808; 
-    --brightblue: #0929dd; 
-    --lightblue: #a1affb; 
-    --skyblue: #6be6f6;
-    --dkgreen: rgb(16, 74, 2); 
-    --green: rgb(25, 112, 3); 
-    --limegreen: rgb(186, 241, 90);
-    --mintgreen: rgb(203, 240, 175); 
-    --mintgreen6: rgba(203, 240, 175, .6);  
-    --paleyellow: rgb(250, 244, 160);
-    --paleyellow6: rgba(250, 244, 160, .6);
-    --brightyellow: rgb(255, 242, 0); 
-    --gold: rgb(255, 209, 2); 
-    --dkgold: rgb(200, 148, 3); 
-    --dkbrown: #380303; 
-    --wheat: rgb(243, 240, 199);
-    --wheat7: rgba(243, 240, 199, 0.7); 
-    --wheat6: rgba(243, 240, 199, 0.6);    
-    --wheat3: rgba(243, 240, 199, 0.3);
-    --grey: rgb(60, 60, 58); }
-
-body { width: 100vw; background-color: var(--mintgreen);
+body { width: 100%; background-color: var(--mintgreen);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; 
     position: relative; /* titleHeader is fixed */ } 
         
@@ -36,9 +11,9 @@ body { width: 100vw; background-color: var(--mintgreen);
     background-color: var(--wheat7); border-radius: .6em; 
     display: flex; flex-direction: row; }
 #titleHeader #faHeading /* "Biographies of" */ { width: 80vw;
-    font-size: 3.4vh; color: white; font-weight: bolder;letter-spacing: .7vw; font-family: 'Times New Roman'; text-align: left; text-shadow: 2px 1px 1px var(--brightPink); }
+    font-size: 3.4vh; color: var(--whitepink); font-weight: bolder; letter-spacing: .7vw; font-family: 'Times New Roman'; text-align: left; text-shadow: 2px 1px 1px var(--brightpink); }
 #faHeading span /* "Famous Artists" */ { font-size: 3.6vh;  
-    font-weight: bolder; color: var(--dkbrown); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; text-shadow: 2px 2px 1px var(--wheat); letter-spacing: 1vw; } 
+    font-weight: bolder; color: var(--brightpink); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; text-shadow: 2px 1px 1px var(--whitepink); letter-spacing: 1vw; } 
 #free { width: 20vw; text-align: right; font-size: 5vh;  
     font-weight: bolder; color: var(--mintgreen);  
     padding-top: 2vh; padding-right: 1vw; letter-spacing: .75vw;
@@ -52,10 +27,10 @@ p span /* "Meet the Masters" */ { color: var(--brightblue);}
 
 ul { list-style-type: none; /* no bullets */ 
     display: flex; flex-direction: column; flex-wrap: nowrap; }
-li { padding-bottom: 2vh; color: var(--lightblue); font-size: 7vw; }
+li { padding-bottom: 2vh; color: var(--ltblue); font-size: 7vw; }
 #use { padding-bottom: 3vh; }
 #progress { font-size: 1.2em; color: var(--brightPink); padding-bottom: 3vh; }
-#progress span { color: var( --lightblue); }
+#progress span { color: var( --ltblue); }
 a { text-decoration: none; /* no underline */ 
     color: var(--brightblue); }
 a:active { /* appearance when clicked */ font-weight: bold; }

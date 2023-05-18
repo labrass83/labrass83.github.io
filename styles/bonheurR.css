@@ -1,8 +1,8 @@
 :root {    /* this artist's colors:  */
     --color1: var(--teal);
-    --color2: var(--mbrwn); 
+    --color2: var(--mbrown); 
     --dkcolor1: var(--dkteal);
-    --dkcolor2: var(--dkbrwn); }
+    --dkcolor2: var(--dkbrown); }
 
 #bg-pic { margin-top: 2.3em; background-position: 44% 0; 
     background-image: url(/images/bonheurR/display/bisonSnow.jpg); }
