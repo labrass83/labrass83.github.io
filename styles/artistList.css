@@ -29,7 +29,7 @@ ul { list-style-type: none; /* no bullets */
     display: flex; flex-direction: column; flex-wrap: nowrap; }
 li { padding-bottom: 2vh; color: var(--ltblue); font-size: 7vw; }
 #use { padding-bottom: 3vh; }
-#progress { font-size: 1.2em; color: var(--brightPink); padding-bottom: 3vh; }
+#progress { font-size: 1.2em; color: var(--brightpink); padding-bottom: 3vh; }
 #progress span { color: var( --ltblue); }
 a { text-decoration: none; /* no underline */ 
     color: var(--brightblue); }
