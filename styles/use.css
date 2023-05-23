@@ -22,8 +22,8 @@ h1 { text-align: center; color: var(--brightpink); font-size: 2.2em;
 h2 { font-size: 1.8em; color: var(--brightpink); text-shadow: 2px 1px 1px var(--dkpink); font-style: italic; letter-spacing: .03em; padding-bottom: .5em; }
 h3 { font-size: 1.7em; font-style: italic; color: var(--teal); 
     text-shadow: 2px 1px 1px var(--dkteal); letter-spacing: .02em;padding-bottom: .7em; }
-p { font-size: 1.18em; color: var(--dkpink); 
-    font-style: italic; font-weight: bold; 
+p { font-size: 1.18em; color: var(--dkpink); font-style: italic; 
+    font-weight: bold; text-align: justify;
     padding-bottom: .7em; }
 p:last-of-type { padding-bottom: .9em; }
 p span { font-family: Verdana; font-weight: bolder; color: orangered; }
@@ -65,10 +65,10 @@ a { color: var(--brightblue); font-weight: bold; }
 @media only screen and (min-width: 800px) {
     body { border-bottom: 11px dotted var(--brightpink); }
     #stickybar { border-top: 11px dotted var(--brightpink); }
-    h1 { font-size: 2.6em; }
+    h1 { font-size: 2.3em; }
     #mainText { padding: 0em 8.5% 1em 8.5%; }
-    h2 { font-size: 2.3em; }
-    h3 { font-size: 2.2em; } 
+    h2 { font-size: 2.1em; }
+    h3 { font-size: 1.9em; } 
     p { font-size: 1.3em; padding-bottom: 1em; } }
 @media only screen and (min-width: 960px) { }
 @media only screen and (min-width: 1024px) {
