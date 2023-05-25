@@ -5,7 +5,7 @@
     --dkcolor2: var(--dkbrown); }
 
 #bg-pic { margin-top: 2.3em; background-position: 44% 0; 
-    background-image: url(/images/bonheurR/display/bisonSnow.jpg); }
+    background-image: url(/images/bonheurR/display/bgpic.jpg); }
 #stickybar, #freeRules { background-color: var(--wheat); }
 #materials { margin-top: 2vh; } 
 
