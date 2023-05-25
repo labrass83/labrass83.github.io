@@ -9,7 +9,7 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
     text-shadow: .03em .05em .06em var(--dkcolor2); font-weight: bold;    
     display: flex; justify-content: center; align-items: center; 
     border: .1em solid var(--dkcolor2); border-radius: .4em; }
-#links a:hover { color: var(--dkcolor2); background-color: var(--color1); }
+#links a:hover { color: var(--wheat); background-color: var(--color1); }
 #title { padding: .1em .4em .12em; font-size: 2em; font-weight: bold; 
     text-align: center; color: var(--color1); letter-spacing: .07em; 
     text-shadow: .05em .1em .05em var(--dkcolor1); 
@@ -30,7 +30,7 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
 #materials a { text-decoration-line: none; font-size: 1.3em; font-weight: bold; letter-spacing: .05em; color: var(--color2); 
     text-shadow: .03em .05em .05em var( --wheat); }
 #materials a:hover 
-    { color: var(--wheat); background-color: var(--dkcolor1); }
+    { color: var(--dkcolor1); }
 #materials a:nth-last-child(1) { padding-bottom: 4em; }
 
 h2 { position: fixed; bottom: 0; width: 100%;
