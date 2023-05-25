@@ -30,14 +30,14 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
 #materials li { padding: 1.5vh 25px; list-style-type: none; }
 #materials a { text-decoration-line: none; font-size: 1.3em; font-weight: bold; letter-spacing: .05em; color: var(--color2); 
     text-shadow: .03em .05em .05em var( --wheat); }
-#materials a:hover { color: var(--dkcolor1); }
+#materials a:hover { color: var(--dkcolor2); }
 #materials a:nth-last-child(1) { padding-bottom: 4em; }
 
 h2 { position: fixed; bottom: 0; width: 100%;
     z-index: 3; padding: .2em 0 .4em 0; font-size: 1.1em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); 
     text-shadow: .03em .05em .05em var( --dkcolor1);
     border-top: .15em solid var(--color1); 
-    background-color:var (--dkcolor1); } 
+    background-color:var (--wheat); } 
 
 @media only screen and (min-width: 360px) {
     #links { height: 2.5em; }
