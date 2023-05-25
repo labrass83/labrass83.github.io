@@ -10,7 +10,7 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
     text-shadow: .03em .05em .06em var(--dkcolor2); font-weight: bold;    
     display: flex; justify-content: center; align-items: center; 
     border: .1em solid var(--dkcolor2); border-radius: .4em; }
-#links a:hover { color: var(--wheat); background-color: var(--dkcolor1); }
+#links a:hover { color: var(--wheat); background-color: var(--dkcolor2); }
 #title { padding: .1em .4em .12em; font-size: 2em; font-weight: bold; 
     text-align: center; color: var(--color1); letter-spacing: .07em; 
     text-shadow: .05em .1em .05em var(--dkcolor1); 
@@ -37,7 +37,7 @@ h2 { position: fixed; bottom: 0; width: 100%;
     z-index: 3; padding: .2em 0 .4em 0; font-size: 1.1em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); 
     text-shadow: .03em .05em .05em var( --dkcolor1);
     border-top: .15em solid var(--color1); 
-    background-color:var (--wheat); } 
+    background-color: var (--wheat); } 
 
 @media only screen and (min-width: 360px) {
     #links { height: 2.5em; }
