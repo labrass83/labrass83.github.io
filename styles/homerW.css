@@ -5,7 +5,7 @@
         --dkcolor1: var(--dkmustard);
         --dkcolor2: var(--teal); }
 
-#bg-pic { margin-top: 2.1em; background-position: 33% 0; 
+#bg-pic { background-position: 33% 0; 
     background-image: url(/images/homerW/bgpic.jpg); }
 #materials { margin-top: 12vh; } 
 #materials h1 { margin-top: 2vh; }

@@ -1,6 +1,6 @@
 body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; } 
 #bg-pic { height: 90vh; width: 100%; z-index: 1; position: fixed; 
-    background-size: cover; background-repeat: no-repeat; top: 7%; }
+    background-size: cover; background-repeat: no-repeat; top: 6%; }
 #stickybar { display: flex; flex-direction: column; 
     position: sticky; top: 0; z-index: 3; padding-top: .1em; }
 #stickybar, #freeRules { background-color: var(--wheat); }
