@@ -1,6 +1,6 @@
 body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; } 
-#bg-pic { height: 93vh; width: 100%; z-index: 1; position: fixed; 
-    background-size: cover; background-repeat: no-repeat; top: 5%; }
+#bg-pic { height: 90vh; width: 100%; z-index: 1; position: fixed; 
+    background-size: cover; background-repeat: no-repeat; top: 6%; }
 #stickybar { display: flex; flex-direction: column; 
     position: sticky; top: 0; z-index: 3; padding-top: .1em; }
 #stickybar, #freeRules { background-color: var(--wheat); }
@@ -30,12 +30,14 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
 #materials li { padding: 1.5vh 25px; list-style-type: none; }
 #materials a { text-decoration-line: none; font-size: 1.3em; font-weight: bold; letter-spacing: .05em; color: var(--color2); 
     text-shadow: .03em .05em .05em var(--wheat); }
-#materials a:hover { color: var(--dkcolor1); }
+#materials a:hover { color: var(--color1); }
 #materials a:nth-last-child(1) { padding-bottom: 4em; }
 
-h2 { position: fixed; bottom: .5em; right: 2em; width: 100%;
-    z-index: 3; font-size: .8em; font-family:'Times'; font-weight: bold; text-align: right; letter-spacing: .1em; color: var(--color1); 
-    text-shadow: .03em .05em .05em var(--dkcolor1); } 
+h2 { position: fixed; bottom: 0; width: 100%;
+    z-index: 3; padding: .2em 0 .4em 0; font-size: .9em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); 
+    text-shadow: .03em .05em .05em var(--dkcolor1);
+    border-top: .15em solid var(--color1); 
+    background-color: var(--wheat); } 
 
 @media only screen and (min-width: 360px) {
     #links { height: 2.5em; }
@@ -43,13 +45,13 @@ h2 { position: fixed; bottom: .5em; right: 2em; width: 100%;
     #freeRules { height: 5.5em; font-size: .73em; } 
     #materials h1 { font-size: 1.7em; letter-spacing: .12em; }
     #materials a { font-size: 1.5em; } 
-    h2 { font-size: 1.3em; } }
+    h2 { font-size: 1.1em; } }
 @media only screen and (min-width: 414px) {
     #freeRules { height: 5.7em; font-size: .83em; } 
     #materials h1 { font-size: 1.9em; }
     #materials li { padding-left: 3em; }
     #materials a { font-size: 1.7em; } 
-    h2 { font-size: 1.5em; } }
+    h2 { font-size: 1.2em; } }
 @media only screen and (min-width: 480px) {
     #links { height: 2.6em; }
     #home, #aList { font-size: 1.2em; }
@@ -57,14 +59,14 @@ h2 { position: fixed; bottom: .5em; right: 2em; width: 100%;
     #materials h1 { font-size: 2em; padding-left: 33px; }
     #materials li { padding-left: 33px; } 
     #materials a { font-size: 1.8em; } 
-    h2 { font-size: 1.6em; } }
+    h2 { font-size: 1.4em; } }
 @media only screen and (min-width: 800px) {
     #freeRules { height: 4.5em; font-size: .83em; } 
     #materials h1 { font-size: 1.6em; letter-spacing: .07em; 
         padding-left: 40px; }
     #materials a { font-size: 1.4em; letter-spacing: .07em; 
         padding-left: 25px; }
-    h2 { height: 1.6em; font-size: 1.2em; padding: .2em 0; } }
+    h2 { height: 1.em; font-size: 1.2em; padding: .1em 0 .2em; } }
 @media only screen and (min-width: 854px) {
     #freeRules { height: 4.4em; font-size: .87em; } }
 @media only screen and (min-width: 960px) {
@@ -79,7 +81,7 @@ h2 { position: fixed; bottom: .5em; right: 2em; width: 100%;
         padding-left: 44px; }
     #materials a { font-size: 1.8em; letter-spacing: .07em; 
         padding-left: 44px; }
-    h2 { font-size: 1.4em; } }
+    h2 { font-size: 1.6em; } }
 @media only screen and (min-width: 1366px) {
     #links { height: 3.5em; }  
     #home, #aList { font-size: 1.4em; padding: 0 25px; }
