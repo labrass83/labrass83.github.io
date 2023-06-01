@@ -39,9 +39,6 @@ img {
 header {
 	display: contents;
 }
-header > * {
-	margin: 1em;
-}
 /* Ceiling / Floor */
 body::before, body::after {
 	display: block;
@@ -67,18 +64,19 @@ body::after {
 
 #logo {
 	grid-area: center;
+	padding:  1em;
 }
 
 #titleLearn, #titleTeach {
 	text-shadow: 3px 4px 2px rgb(34, 95, 131);
 	/* font-size: 3em; */
+	letter-spacing: 0.3em;
 }
 #titleSmallDev {
 	display: none;
 	letter-spacing: 5px;
 	font-size: 2em;
 	text-shadow: 3px 2px 2px rgb(34, 95, 131);
-	margin: 2vh 2vw;
 }
 #titleLearn {
 	grid-area: left;
@@ -86,6 +84,11 @@ body::after {
 #titleSmallDev span {
 	font-size: .6em;
 	letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+	#logo {
+		font-size: 20px;
+	}
 }
 @media (max-width: 1500px) {
 	#titleLearn, #titleTeach {
@@ -112,7 +115,6 @@ main {
 	}
 }
 img {
-	/* border: 1em solid #00000022; */
 	box-shadow: #00000040 5px 3px 6px 12px;
 }
 
@@ -120,15 +122,16 @@ img {
 	text-decoration-line: none;
 	--fade-out: linear-gradient(#ffffffaa, #ffffffaa);
 	text-shadow: 3px 2px 2px rgb(21, 14, 1);
-	/* padding: 1em; */
-	/* height: 20vmin; */
 	width: 13em;
 	aspect-ratio: 1.5;
-	/* background-size: cover; */
 	background-repeat: no-repeat;
 }
 #choices > a:not([href]) img {
 	filter: grayscale(1) contrast(0.5) brightness(2);
+}
+#choices > a:not([href]) div {
+	background-color: unset;
+	color: #eee;
 }
 #choices > a {
 	color: unset;
