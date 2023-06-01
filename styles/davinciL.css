@@ -1,0 +1,62 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--bali);
+        --color2: var(--pancho); 
+        --dkcolor1: var(--dkblue);
+        --dkcolor2: var(--tundra); }
+        
+body { background-color: var(--tundra); } 
+#bg-pic { background-position: 47% 0; 
+    background-image: url(/images/davinciL/bgpic.jpg); 
+    top: 10%; }
+#title { font-size: 1.5em; } 
+#materials { margin-top: 33vh; } 
+#materials h1 { margin-top: 2vh; }
+#materials a:hover { color: var(--color1); }
+
+@media only screen and (min-width: 250px) {
+    #bg-pic { margin-top: 1em; top: 7.5%; } 
+    #materials { margin-top: 35vh; } }
+@media only screen and (min-width: 320px) {
+    #bg-pic { margin-top: 1em; top: 7.5%; } }
+@media only screen and (min-width: 360px) {
+    #bg-pic { margin-top: 1.3em; top: 8%; }
+    #title { font-size: 1.7em; } 
+    #materials { margin-top: 36vh; }
+    #materials h1 { margin-top: 3vh; } }
+@media only screen and (min-width: 375px) { } 
+@media only screen and (min-width: 414px) {
+    #bg-pic { background-position: 41% 0; margin-top: .6em; }
+    #materials { margin-top: 32vh; } }
+@media only screen and (min-width: 414px) {
+    #materials { margin-top: 31vh; } }
+@media only screen and (min-width: 480px) {
+    #title { font-size: 1.8em; } 
+    #materials { margin-top: 30vh; } }
+@media only screen and (min-width: 500px) {    
+    #bg-pic { background-position: center; width: 75%; 
+    right: 12.5%; } }
+@media only screen and (min-width: 530px) {
+    #materials { margin-top: 32vh; } }
+@media only screen and (min-width: 575px) {
+    #materials { margin-top: 34vh; } }
+@media only screen and (min-width: 650px) {
+    #materials { margin-top: 36vh; } }
+@media only screen and (min-width: 675px) {
+    #materials { margin-top: 48vh; } 
+    #bg-pic { background-position: center; width: 60%; 
+    right: 20%; } }
+@media only screen and (min-width: 800px) {
+    #materials h1 { margin-top: 0; } }
+@media only screen and (min-width: 900px) {
+    #bg-pic { background-position: center; width: 50%; 
+    right: 25%; } }
+@media only screen and (min-width: 960px) { 
+    #materials { margin-top: 15vh; } }
+@media only screen and (min-width: 1024px) {
+    #bg-pic { background-position: 0 -30%; }  
+    #materials { margin-top: 12vh; } }
+@media only screen and (min-width: 1366px) {
+    #materials { margin-top: 13vh; } }
+@media only screen and (min-width: 1920px) { 
+    #materials { margin-top: 18vh; } } 

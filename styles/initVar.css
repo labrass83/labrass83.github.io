@@ -19,7 +19,9 @@
         --mintgreen: rgb(203, 240, 175); 
         --mintgreen6: rgba(203, 240, 175, .6);  
     --brightblue: #0929dd;
-        --ltblue: #a1affb; 
+        --ltblue: #a1affb;
+        --bali: #8294ab;
+        --dkblue: #3d4780; 
         --skyblue: #6be6f6;
         --teal: #07aec4; 
         --dkteal: #036a78;
@@ -35,4 +37,6 @@
     --ltbrown: rgb(129, 115, 80);
         --mbrown: rgb(94, 83, 56);
         --dkbrown: rgb(62, 52, 27);
+        --pancho: #ecd0ab;
+        --tundra: #312f2d;
 }
