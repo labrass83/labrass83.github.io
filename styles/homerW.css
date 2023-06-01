@@ -5,23 +5,22 @@
         --dkcolor1: var(--dkmustard);
         --dkcolor2: var(--teal); }
 
-#bg-pic { background-position: 33% 0; 
-    background-image: url(/images/homerW/bgpic.jpg); }
+main {
+    background-position: left 46% top 20%;
+    background-image: url(/images/homerW/bgpic.jpg);
+    }
 #materials { margin-top: 12vh; } 
 #materials h1 { margin-top: 2vh; }
 #materials a:hover { color: var(--color1); }
 
 @media only screen and (min-width: 360px) {
-    #bg-pic { background-position: 40% 0; margin-top: 1.3em;}
     #materials { margin-top: 13vh; }
     #materials h1 { margin-top: 3vh; } }
 @media only screen and (min-width: 375px) {
     #materials { margin-top: 15vh; } }
 @media only screen and (min-width: 414px) {
-    #bg-pic { background-position: 41% 0; margin-top: .6em; }
     #materials { margin-top: 16vh; } }
 @media only screen and (min-width: 480px) {
-    #bg-pic { background-position: 37% 0; }
     #materials { margin-top: 16vh; } }
 @media only screen and (min-width: 800px) {
     #materials { margin-top: 8vh; } 
@@ -30,7 +29,6 @@
 @media only screen and (min-width: 960px) { 
     #materials { margin-top: 13vh; } }
 @media only screen and (min-width: 1024px) {
-    #bg-pic { background-position: 0 -30%; }  
     #materials { margin-top: 12vh; } }
 @media only screen and (min-width: 1366px) {
     #materials { margin-top: 13vh; } }

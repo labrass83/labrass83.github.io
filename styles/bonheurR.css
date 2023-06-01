@@ -4,19 +4,12 @@
     --dkcolor1: var(--dkteal);
     --dkcolor2: var(--dkbrown); }
 
-#bg-pic { margin-top: 2.3em; background-position: 44% 0; 
-    background-image: url(/images/bonheurR/bgpic.jpg); }
+main {
+    background-position: left 50% top 50%;
+    background-image: url(/images/bonheurR/bgpic.jpg);
+}
+@media (max-width: 750px) {
+	main {background-position: left 57% top 50%;}
+}
 #stickybar, #freeRules { background-color: var(--wheat); }
 #materials { margin-top: 2vh; } 
-
-@media only screen and (min-width: 360px) {
-    #bg-pic { background-position: 48% 0; margin-top: 1.5em;} }
-@media only screen and (min-width: 414px) {
-    #bg-pic { margin-top: 1em; } }
-@media only screen and (min-width: 480px) {
-    #bg-pic { background-position: 44% 0; } }
-@media only screen and (min-width: 800px) {
-    #bg-pic { background-position: 30% 50%; } }
-@media only screen and (min-width: 1366px) {
-    #bg-pic { background-position: 0 50%; } }
-@media only screen and (min-width: 1920px) {}
