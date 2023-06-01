@@ -5,7 +5,7 @@
     --dkcolor2: var(--dkbrown); }
 
 main {
-    background-position: left 50% top 50%;
+    background-position: left 70% top 50%;
     background-image: url(/images/bonheurR/bgpic.jpg);
 }
 @media (max-width: 750px) {

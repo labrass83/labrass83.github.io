@@ -1,19 +1,10 @@
-html {height:100%;}
-body {display: flex;height: 100%;font-family: Arial;transition: all 500ms ease-in-out;flex-direction: column;} 
-main {
-    overflow-y: auto;
-    flex-grow: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-#stickybar {
-    display: flex;
-    flex-direction: column;
-    padding-top: .1em;
-    }
+html { height: 100%; }
+body { height: 100%;  font-family: Arial; transition: all 500ms ease-in-out; display: flex; flex-direction: column;} 
+main { overflow-y: auto; flex-grow: 1; background-size: cover;
+    background-repeat: no-repeat; background-attachment: fixed; }
+#stickybar { display: flex; flex-direction: column; padding-top: .1em; }
 #stickybar, #freeRules { background-color: var(--wheat); }
-#links { height: 2em; list-style-type: none; display: flex; }
+#links { height: fit-content; list-style-type: none; display: flex; }
 #home, #aList { text-decoration: none; margin: .2em 0 .3em 2em; padding: 0 15px;    
     font-size: .75em; color: var(--color2); letter-spacing: .08em; 
     text-shadow: .03em .05em .06em var(--dkcolor2); font-weight: bold;    
@@ -25,7 +16,7 @@ main {
     text-shadow: .05em .1em .05em var(--dkcolor1); 
     border-top: .2em ridge var(--color1); border-bottom: .2em ridge var(--color1); } 
 
-#freeRules { height: 6.3em; color: var(--dkcolor2); 
+#freeRules { height: fit-content; color: var(--dkcolor2); 
     font-size: .62em; font-family:'Times'; font-weight: bold; position: relative; z-index: 2; text-align: center; 
     padding: .45em .7em; border: .4em ridge var(--color2); }
 #freeRules span { font-size: 1.25em; text-align: center; 
@@ -42,21 +33,12 @@ main {
 #materials a:hover { color: var(--color1); }
 #materials a:nth-last-child(1) { padding-bottom: 3em; }
 
-h2 {
-    padding: .2em 0 .3em 0;
-    font-size: .9em;
-    font-family:'Times';
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: .2em;
-    color: var(--color1);
-    text-shadow: .03em .05em .05em var(--dkcolor1);
-    border-top: .15em solid var(--color1);
-    background-color: var(--wheat);
-    } 
+h2 { padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times';
+    font-weight: bold; text-align: center; letter-spacing: .2em;
+    color: var(--color1); text-shadow: .03em .05em .05em var(--dkcolor1);
+    border-top: .15em solid var(--color1); background-color: var(--wheat); } 
 
 @media only screen and (min-width: 260px) {
-    #bg-pic { top: 5.5%; }
     #home, #aList { font-size: .9em; }
     #freeRules { height: 6.3em; font-size: .7em; } 
     #materials h1 { font-size: 1.7em; letter-spacing: .12em; }

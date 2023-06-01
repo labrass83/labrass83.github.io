@@ -2,98 +2,109 @@ body { width: 100%; background-color: var(--mintgreen);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; 
     position: relative; /* titleHeader is fixed */ } 
         
-#titleHeader { height: 15.5vh; width: 100%; padding: 3vh 5vw; 
+#titleHeader { height: 5em; width: 100%; padding: 3vh 5vw; 
     background-image: url(/images/artistList/hdmButterfly.jpg);
-    background-size: cover; background-position: 0 42%; 
-    position: fixed; top: 0; z-index: 500; }
-#titleHeader div { height: 100%; width: 100%; 
-    padding: .5vh 3vw .75vh;
+    background-size: cover; background-position: left 12% top 42%;
+    position: fixed; top: 0; z-index: 500; border: 2px solid var(--brightpink); }
+#titleHeader div { height: 100%; width: 100%; padding: .5vh 3vw .75vh;
     background-color: var(--wheat7); border-radius: .6em; 
     display: flex; flex-direction: row; }
 #titleHeader #faHeading /* "Biographies of" */ { width: 80vw;
-    font-size: 3.4vh; color: var(--whitepink); font-weight: bolder; letter-spacing: .7vw; font-family: 'Times New Roman'; text-align: left; text-shadow: 2px 1px 1px var(--brightpink); }
-#faHeading span /* "Famous Artists" */ {
-    font-size: 3.6vh;
-    font-weight: bolder;
-    color: var(--brightpink);
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; */
-    font-family: Arial, sans-serif;
-    text-shadow: 2px 1px 1px var(--whitepink);
-    letter-spacing: 1vw;
-    } 
-#free { width: 20vw; text-align: right; font-size: 5vh;  
+    font-size: 8vw; color: var(--whitepink); font-weight: bolder; letter-spacing: .7vw; font-family: 'Times New Roman'; text-align: left; text-shadow: 2px 1px 1px var(--brightpink); }
+#faHeading span /* "Famous Artists" */ { font-size: 12vw; font-weight: bolder;
+    color: var(--brightpink); font-family: Arial, sans-serif;
+    text-shadow: 2px 1px 1px var(--whitepink); letter-spacing: 1vw; } 
+#free { width: 20vw; text-align: right; font-size: 10vw;  
     font-weight: bolder; color: var(--mintgreen);  
     padding-top: 2vh; padding-right: 1vw; letter-spacing: .75vw;
     text-shadow: 2px 2px 1px var(--dkbrown); }
     
 main /* all under the fixed #titleHeader */ { 
-    padding: 2vh 7vw; margin-top: 15.5vh; font-weight: bold; } 
+    padding: 2vh 7vw; margin-top: 5em; font-weight: bold; } 
 p { color: var(--green); font-size: 5vw; padding-bottom: 2vh;
     font-family:'Times New Roman'; }
 p span /* "Meet the Masters" */ { color: var(--brightblue);}
 
 ul { list-style-type: none; /* no bullets */ 
     display: flex; flex-direction: column; flex-wrap: nowrap; }
-li { padding-bottom: 2vh; color: var(--ltblue); font-size: 7vw; }
+li { padding-bottom: 2vh; color: var(--ltblue); font-size: 10vw; }
 #use { padding-bottom: 3vh; }
-#progress { font-size: 1.2em; color: var(--brightpink); padding-bottom: 3vh; }
+#progress { font-size: 7.5vw; color: var(--brightpink); padding-bottom: 3vh; }
 #progress span { color: var( --ltblue); }
 a { text-decoration: none; /* no underline */ 
     color: var(--brightblue); }
 a:active { /* appearance when clicked */ font-weight: bold; }
 a:hover { color: var(--dkgreen); }
     
+@media only screen and (min-width: 150px) {
+    #titleHeader #faHeading { font-size: .9em; }
+    #faHeading span { font-size: 1em; } }
+@media only screen and (min-width: 200px) {
+    #progress { font-size: 6vw; } }
+@media only screen and (min-width: 275px) {
+    #titleHeader { height: 4em; background-position: left 0 top 40%; }
+    main { margin-top: 4em; }
+    li { font-size: 7.5vw; } }
 @media only screen and (min-width: 360px) {
-    #titleHeader #faHeading { font-size: 3.5vh; }
-    #faHeading span { font-size: 3vh; } 
-    #free { font-size: 4vh; } 
-    #progress { font-size: 1.4em; } }
-@media only screen and (min-width: 375px) {
-    #faHeading span { font-size: 3.1vh; } 
-    #free { font-size: 4.1vh; padding-top: 1.5vh; }
-    p { font-size: 5.8vw; } 
-    #progress { font-size: 1.4em; } }
+    #titleHeader #faHeading { font-size: 1em; }
+    #faHeading span { font-size: 1.2em; } 
+    li { font-size: 7vw; } }
+@media only screen and (min-width: 375px) { 
+    p { font-size: 4.6vw; } 
+    #progress { font-size: 5vw; } }
 @media only screen and (min-width: 414px) {
-    #titleHeader { background-position: 0 42.5%; }
-    #titleHeader #faHeading { font-size: 3.4vh; }
-    #faHeading span { font-size: 3.2vh; } 
-    #free { font-size: 3.3vh; padding-top: 1.75vh; }
-    p { font-size: 5.85vw; }
-    li, a { font-size: 7.2vw; } 
-    #progress { font-size: 1.5em; } }
+    #titleHeader { height: 5em; background-position: left 0 top 38%; 
+    padding: .9em 5vw; }
+    main { margin-top: 5em; }
+    #free { font-size: 2em; padding-top: 1.2vh; }
+    p { font-size: 4.59vw; }
+    li { font-size: 7vw; } 
+    #progress { font-size: 4.5vw; } }
 @media only screen and (min-width: 480px) {
-    #titleHeader { height: 17vh; }
-    #titleHeader #faHeading { font-size: 3.8vh; }
-    #faHeading span { font-size: 3.9vh; } 
-    #free { font-size: 4vh; padding-top: 1.7vh; padding-right: 0; }
-    main { margin-top: 17vh; } 
-    p { font-size: 3.7vh; }
-    li, a { font-size: 7.4vw; } 
-    #progress { font-size: 1.65em; } } 
+    #titleHeader #faHeading { font-size: 1.2em; }
+    p { font-size: 4.1vw; }
+    li { font-size: 6vw; } } 
+@media only screen and (min-width: 550px) {
+    p { font-size: 3.7vw; }
+    li { font-size: 5vw; } 
+    #progress { font-size: 4vw; } } 
+@media only screen and (min-width: 620px) {
+    #titleHeader { height: 6em; background-position: left 0 top 37%; 
+        padding: 1.4em 4vw; }
+    main { margin-top: 6em; } 
+    p { font-size: 3.22vw; }
+    li { font-size: 4vw; } 
+    #progress { font-size: 3vw; } } 
+@media only screen and (min-width: 700px) {
+    p { font-size: 2.8vw; } } 
 @media only screen and (min-width: 800px) {
-    #titleHeader { height: 20vh; background-position: 0 36%; 
-        padding: 3vh 2vw; }
+    #titleHeader { background-position: 0 36%; padding: 1em 2vw; }
     #titleHeader div { padding: .75vh 2vw 1vh; }
-    #titleHeader #faHeading { font-size: 4.5vh; }
-    #faHeading span { font-size: 5.2vh; } 
-    #free { font-size: 8vh; padding-top: 1vh; }
-    main { margin-top: 20vh; padding: 2vw 4vw; } 
-    p { font-size: 3.9vh; padding-bottom: 3.5vh; }
+    #titleHeader #faHeading { font-size: 1.3em; }
+    #faHeading span { font-size: 1.3em; } 
+    #free { font-size: 2.4em; }
+    main { padding: 2vw 4vw; } 
+    p { font-size: 2vw; padding-bottom: 3.5vh; }
     #artists { position: relative; columns: 22vw 3; column-gap: 3vw; 
         column-fill: balance; }
-    li, a { font-size: 2.5vw; } 
-    #progress { font-size: .95em; } }
-@media only screen and (min-width: 1024px) {
-    #titleHeader { background-position: 0 37%; }
-    #titleHeader #faHeading { font-size: 4.6vh; }
-    #faHeading span { font-size: 5.4vh; } 
-    p { font-size: 3.7vh; } 
-    #progress { font-size: 1.2em; } } 
+    li { font-size: 2.5vw; } 
+    #progress { font-size: 2vw; } }
+@media only screen and (min-width: 950px) {
+    #free { font-size: 4vw; }
+    p { font-size: 2vw; } }
+@media only screen and (min-width: 1024px) { 
+    #titleHeader { height: 7.5em; background-position: left 0 top 35.5%; }
+    #titleHeader #faHeading { font-size: 1.5em; }
+    #faHeading span { font-size: 1.4em; } 
+    main { margin-top: 7.5em; } 
+    #free { font-size: 3.8vw; }
+    #progress { font-size: 1.7vw; } }
+@media only screen and (min-width: 1250px) {
+    #free { font-size: 3.3vw; }
+    p { font-size: 1.5vw; } }
 @media only screen and (min-width: 1366px) {
-    #titleHeader { background-position: 0 36.5%; }
-    #titleHeader #faHeading { font-size: 5.1vh; }
-    #faHeading span { font-size: 6vh; } 
-    p { font-size: 3.58vh; } 
-    #progress { font-size: 1.65em; } }
-@media only screen and (min-width: 1920px) {
-    #progress { font-size: 2.3em; } }
+    #titleHeader { height: 9.5em; }
+    main { margin-top: 9.5em; } 
+    #titleHeader #faHeading { font-size: 2em; }
+    #faHeading span { font-size: 1.5em; }
+    #progress { font-size: 1.9vw; } }
