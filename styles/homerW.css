@@ -5,7 +5,7 @@
         --dkcolor1: var(--dkmustard);
         --dkcolor2: var(--teal); }
 
-#bg-pic {
+main {
     background-position: left 46% top 20%;
     background-image: url(/images/homerW/bgpic.jpg);
     }

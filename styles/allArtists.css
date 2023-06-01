@@ -1,8 +1,17 @@
-body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; } 
-#bg-pic { height: 90vh; width: 100%; z-index: 1; position: fixed; 
-    background-size: cover; background-repeat: no-repeat; top: 6%; }
-#stickybar { display: flex; flex-direction: column; 
-    position: sticky; top: 0; z-index: 3; padding-top: .1em; }
+html {height:100%;}
+body {display: flex;height: 100%;font-family: Arial;transition: all 500ms ease-in-out;flex-direction: column;} 
+main {
+    overflow-y: auto;
+    flex-grow: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+#stickybar {
+    display: flex;
+    flex-direction: column;
+    padding-top: .1em;
+    }
 #stickybar, #freeRules { background-color: var(--wheat); }
 #links { height: 2em; list-style-type: none; display: flex; }
 #home, #aList { text-decoration: none; margin: .2em 0 .3em 2em; padding: 0 15px;    
@@ -33,11 +42,18 @@ body { width: 100%; font-family: Arial; transition: all 500ms ease-in-out; }
 #materials a:hover { color: var(--color1); }
 #materials a:nth-last-child(1) { padding-bottom: 3em; }
 
-h2 { position: fixed; bottom: 0; width: 100%;
-    z-index: 3; padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times'; font-weight: bold; text-align: center; letter-spacing: .2em; color: var(--color1); 
+h2 {
+    padding: .2em 0 .3em 0;
+    font-size: .9em;
+    font-family:'Times';
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .2em;
+    color: var(--color1);
     text-shadow: .03em .05em .05em var(--dkcolor1);
-    border-top: .15em solid var(--color1); 
-    background-color: var(--wheat); } 
+    border-top: .15em solid var(--color1);
+    background-color: var(--wheat);
+    } 
 
 @media only screen and (min-width: 360px) {
     #links { height: 2.5em; }
@@ -66,7 +82,7 @@ h2 { position: fixed; bottom: 0; width: 100%;
         padding-left: 40px; }
     #materials a { font-size: 1.4em; letter-spacing: .07em; 
         padding-left: 25px; }
-    h2 { height: 1.em; font-size: 1.2em; padding: .1em 0 .2em; } }
+    h2 {font-size: 1.2em;padding: .1em 0 .2em;} }
 @media only screen and (min-width: 854px) {
     #freeRules { height: 4.4em; font-size: .87em; } }
 @media only screen and (min-width: 960px) {

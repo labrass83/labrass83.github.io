@@ -4,12 +4,12 @@
     --dkcolor1: var(--dkteal);
     --dkcolor2: var(--dkbrown); }
 
-#bg-pic {
+main {
     background-position: left 50% top 50%;
     background-image: url(/images/bonheurR/bgpic.jpg);
-    }
+}
 @media (max-width: 750px) {
-	#bg-pic {background-position: left 57% top 50%;}
+	main {background-position: left 57% top 50%;}
 }
 #stickybar, #freeRules { background-color: var(--wheat); }
 #materials { margin-top: 2vh; } 
