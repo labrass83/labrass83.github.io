@@ -5,10 +5,8 @@
         --dkcolor1: var(--dkmustard);
         --dkcolor2: var(--teal); }
 
-main {
-    background-position: left 46% top 20%;
-    background-image: url(/images/homerW/bgpic.jpg);
-    }
+main { background-position: left 46% top 20%;
+    background-image: url(/images/homerW/bgpic.jpg); }
 #materials { margin-top: 12vh; } 
 #materials h1 { margin-top: 2vh; }
 #materials a:hover { color: var(--color1); }
