@@ -23,7 +23,6 @@ main { background-position: left 46% top 20%;
 @media only screen and (min-width: 800px) {
     #materials { margin-top: 8vh; } 
     #materials h1 { margin-top: 0; } }
-@media only screen and (min-width: 854px) { }
 @media only screen and (min-width: 960px) { 
     #materials { margin-top: 13vh; } }
 @media only screen and (min-width: 1024px) {

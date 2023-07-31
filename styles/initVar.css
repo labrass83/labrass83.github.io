@@ -3,8 +3,10 @@
     { 
     --red: #bf2525; 
         --dkred: #8b0808; 
+        --redbrown: #db0a6869; 
     --pink: rgb(253, 136, 234);
         --whitepink: rgb(251, 210, 244);
+        --rosepink: rgb(195, 126, 177);
         --brightpink: rgb(251, 94, 209); 
         --dkpink: rgb(181, 6, 134); 
     --paleyellow: rgb(250, 244, 160);    
