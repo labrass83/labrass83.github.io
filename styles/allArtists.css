@@ -1,6 +1,7 @@
 html { height: 100%; }
 body { 
     height: 100%;  
+    background-color: var(--tundra);
     font-family: Arial; 
     transition: all 500ms ease-in-out; 
     display: flex; flex-direction: column; } 
@@ -30,7 +31,7 @@ main {
 #links a:hover { color: var(--wheat); background-color: var(--dkcolor2); }
 #title { 
     padding: .1em 6vw .12em; 
-    font-size: 2em; font-weight: bold; color: var(--color1);
+    font-size: 1.5em; font-weight: bold; color: var(--color1);
     text-align: center; letter-spacing: .07em; 
     text-shadow: .05em .1em .05em var(--dkcolor1); 
     border-top: 6px ridge var(--color1); border-bottom: 6px ridge var(--color1); } 
@@ -75,6 +76,9 @@ h2 { padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times';
     h2 { font-size: 1em; } }
 @media only screen and (min-width: 320px) {
     #home, #aList { font-size: 1.1em; }
+    #title { font-size: 1.8em; }
+    #materials h1 { font-size: 1.8em; }
+    #materials a { font-size: 1.6em; } 
     h2 { font-size: 1.1em; } }
 @media only screen and (min-width: 414px) {
     #title { font-size: 2.2em; }
@@ -83,9 +87,11 @@ h2 { padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times';
     #materials a { font-size: 1.7em; } 
     h2 { font-size: 1.2em; } }
 @media only screen and (min-width: 480px) {
-    #home, #aList { font-size: 1.2em; margin: .2em 0 .3em 8vw; padding: 5px 15px; }
+    #home, #aList { font-size: 1.2em; 
+        margin: .2em 0 .3em 8vw; padding: 5px 15px; }
     #aList { margin-left: 4vw; }
-    #title { padding: .07em 8vw .14em;  } 
+    #title { font-size: 2.3em; padding: .07em 8vw .14em; 
+        text-shadow: .05em .08em .05em var(--dkcolor1); } 
     #freeRules { font-size: 2.9vw; padding: .45em 8vw; } 
     #materials h1 { font-size: 2em; padding: 2vh 8vw; }
     #materials li { padding: 1.5vh 8vw; }
@@ -93,26 +99,31 @@ h2 { padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times';
     h2 { font-size: 1.4em; } }
 @media only screen and (min-width: 800px) {    
     #home, #aList { font-size: 1.3em; }
+    #title { font-size: 2.4em; }
     #freeRules { font-size: 2.9vw; } 
     #materials h1 { font-size: 2.2em; padding: 2vh 8vw; }
     #materials li { padding: 1.5vh 12vw; }
     #materials a { font-size: 2em; } 
     h2 { font-size: 1.6em; } }
 @media only screen and (min-width: 1024px) { 
-    #title { font-size: 2.5em; letter-spacing: .12em; border-top: 7px ridge var(--color1); border-bottom: 7px ridge var(--color1); } 
+    #home, #aList { font-size: 1.4em; }
+    #title { font-size: 2.6em; letter-spacing: .12em; 
+        border-top: 7px ridge var(--color1); 
+        border-bottom: 7px ridge var(--color1); } 
     #freeRules { font-size: 2vw; border-top: 6px ridge var(--color2); border-bottom: 6px ridge var(--color2); } 
-    #materials h1 { font-size: 2.4em; letter-spacing: .08em; }
-    #materials a { font-size: 2em; letter-spacing: .07em; }
+    #materials h1 { font-size: 2.3em; letter-spacing: .08em; }
+    #materials a { font-size: 2.1em; letter-spacing: .07em; }
     h2 { font-size: 1.7em; } }
 @media only screen and (min-width: 1600px) { 
-    #title { font-size: 2.7em; } 
+    #home, #aList { font-size: 1.6em; }
+    #title { font-size: 3em; } 
     #freeRules { font-size: 1.45vw; } 
     #materials h1 { font-size: 2.6em; }
     #materials a { font-size: 2.2em; }
     h2 { font-size: 1.8em; } }
 @media only screen and (min-width: 1920px) {
-    #home, #aList { font-size: 1.6em; }    
-    #title { font-size: 3em; padding: .1em 8vw .2em; }
+    #home, #aList { font-size: 1.8em; }    
+    #title { font-size: 4.3em; padding: .1em 8vw .2em; }
     #freeRules { font-size: 1.04vw; } 
     #materials h1 { font-size: 3em; }
     #materials a { font-size: 2.6em; }

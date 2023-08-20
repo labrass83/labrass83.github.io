@@ -1,0 +1,11 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--orangetan);
+        --color2: var(--gold); 
+        --dkcolor1: var(--dkorange);
+        --dkcolor2: var(--dkgold); }
+            
+main { background-position: 45% 75%; 
+        background-image: url(/images/hokusaiK/bgpic.jpg); }
+#materials { margin-top: 5%; } 
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */

@@ -5,19 +5,14 @@
         --dkcolor1: var(--dkblue);
         --dkcolor2: var(--dkmustard); }
         
-body { background-color: var(--tundra); } 
 main { background-position: 10% 0; 
-    background-image: url(/images/vanRijnR/bgpic.jpg); }
-#title { font-size: 1.5em; color: var(--color1); } 
-#materials { margin-top: 40%; } 
-#materials h1 { margin-top: 2%; }
+    background-image: url(/images/vanRijnR/bgpic.jpg); }  
 #materials a:hover { color: var(--dkcolor2); }
 
-/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */@media only screen and (min-width: 414px) {
-    #materials { margin-top: 35%; } 
-    #title { font-size: 1.8em; } }
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+@media only screen and (max-width: 414px) {
+    #title { font-size: 1.5em; } }
 @media only screen and (min-width: 480px) { 
     #materials { margin-top: 5%; } }
 @media only screen and (min-width: 800px) {
-    main { background-position: 0 75%; }
-    #materials h1 { margin-top: 0; } }
+    main { background-position: 0 75%; } }

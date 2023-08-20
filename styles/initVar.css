@@ -1,6 +1,9 @@
 *{ border: 0; margin: 0; padding: 0; box-sizing: border-box; }
 :root
     { 
+    --orange: #e35b17; 
+        --orangetan: #ef9c64; 
+        --dkorange: #cc510f; 
     --red: #bf2525; 
         --dkred: #8b0808; 
         --redbrown: #db0a6869; 
