@@ -1,0 +1,15 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--peachpink); 
+        --dkcolor1: var(--rosepink); 
+        --color2: var(--springrain);
+        --dkcolor2: var(--celadon);}
+            
+main { background-position: right top; 
+        background-image: url(/images/degasE/bgpic.jpg); }
+#materials { margin-top: 35%; } 
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+@media only screen and (min-width: 800px) {
+    #materials { margin-top: 3%; } }
+@media only screen and (min-width: 1024px) {
+    #materials { margin-top: 0; } }

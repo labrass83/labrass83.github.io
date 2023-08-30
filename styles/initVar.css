@@ -9,6 +9,8 @@
         --redbrown: #db0a6869; 
     --pink: rgb(253, 136, 234);
         --whitepink: rgb(251, 210, 244);
+        --peachpink: rgb(251, 169, 169);
+        --softpink: rgb(225, 163, 187);
         --rosepink: rgb(195, 126, 177);
         --brightpink: rgb(251, 94, 209); 
         --dkpink: rgb(181, 6, 134); 
@@ -23,6 +25,8 @@
         --limegreen: rgb(186, 241, 90); 
         --mintgreen: rgb(203, 240, 175); 
         --mintgreen6: rgba(203, 240, 175, .6);  
+        --springrain: #a7c1af; 
+        --celadon: #819c8b; 
     --brightblue: #0929dd;
         --ltblue: #a1affb;
         --bali: #8294ab;
