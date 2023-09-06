@@ -5,8 +5,8 @@
         --dkcolor1: var(--dkmustard);
         --dkcolor2: var(--teal); }
 
-main { background-position: left 46% bottom;
-    background-image: url(/images/homerW/bgpic2.jpg); }
+main { background-position: left top;
+    background-image: url(/images/homerW/bgpic.jpg); }
 #materials { margin-top: 12vh; } 
 
 /* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
