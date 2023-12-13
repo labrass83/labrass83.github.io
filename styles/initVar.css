@@ -2,7 +2,9 @@
 :root
     { 
     --orange: #e35b17; 
+        --lgtorange: #ffb668; 
         --orangetan: #ef9c64; 
+        --dkorangetan: #d47a3e; 
         --dkorange: #cc510f; 
     --red: #bf2525; 
         --dkred: #8b0808; 
@@ -34,6 +36,7 @@
         --skyblue: #6be6f6;
         --teal: #07aec4; 
         --dkteal: #036a78;
+        --xdkteal: #023f47;
     --grey: rgb(60, 60, 58);
         --dkgrey: rgb(28, 28, 27);
         --ltgrey: rgb(168, 168, 166);

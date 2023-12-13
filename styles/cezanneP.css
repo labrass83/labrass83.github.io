@@ -1,0 +1,30 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--lgtorange);
+        --color2: var(--xdkteal); 
+        --dkcolor1: var(--dkorange);
+        --dkcolor2: var(--dkteal); }
+
+main { background-position: left top;
+    background-image: url(/images/cezanneP/bpApplesRoses.jpg); }
+#materials h1 { text-shadow: var(--dkgold); } 
+#materials li { padding: 1vh 6vw; }
+#materials a { margin-top: 2vh; text-shadow: var(--teal); } 
+#materials a:nth-last-child(1) { padding-bottom: 12em; }
+h2 { color: var(--teal); }
+
+@media only screen and (min-width: 800px) {    
+    #materials h1 { font-size: 2em; }
+    #materials a { font-size: 1.8em; } 
+    #materials a:nth-last-child(1) { padding-bottom: 5em; } }
+@media only screen and (min-width: 1024px) { 
+    #materials h1 { font-size: 2.2em; }
+    #materials a { font-size: 2em; } 
+    #materials a:nth-last-child(1) { padding-bottom: 7em; } }
+@media only screen and (min-width: 1024px) { 
+        #materials a:nth-last-child(1) { padding-bottom: 11em; } }
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+
+
+
