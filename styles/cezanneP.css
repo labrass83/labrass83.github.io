@@ -6,7 +6,7 @@
         --dkcolor2: var(--dkteal); }
 
 main { background-position: left top;
-    background-image: url(/images/cezanneP/bpApplesRoses.jpg); }
+    background-image: url(/images/cezanneP/bgpic.jpg); }
 #materials h1 { text-shadow: var(--dkgold); } 
 #materials li { padding: 1vh 6vw; }
 #materials a { margin-top: 2vh; text-shadow: var(--teal); } 
