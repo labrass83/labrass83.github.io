@@ -1,0 +1,32 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--skyblue);
+        --color2: var(--pink); 
+        --dkcolor1: var(--dkteal);
+        --dkcolor2: var(--brightpink); }
+
+main { background-position: left top;
+    background-image: url(/images/monetC/bgpic.jpg); }
+#materials h1 { color: var(--purple); text-shadow: var(--dkteal); } 
+#materials li { padding: 1vh 6vw;  }
+#materials a { margin-top: 2vh; color: var(--dkpink); 
+    text-shadow: var(--teal); } 
+#materials a:hover { color: var(--dkteal); text-shadow: var(--teal); } 
+#materials a:nth-last-child(1) { padding-bottom: 12em; }
+h2 { color: var(--teal); }
+
+@media only screen and (min-width: 800px) {    
+    #materials h1 { font-size: 2em; }
+    #materials a { font-size: 1.8em; } 
+    #materials a:nth-last-child(1) { padding-bottom: 1em; } }
+@media only screen and (min-width: 1024px) { 
+    #materials h1 { font-size: 2.2em; }
+    #materials a { font-size: 2em; } 
+    #materials a:nth-last-child(1) { padding-bottom: 2em; } }
+@media only screen and (min-width: 1920px) { 
+        #materials a:nth-last-child(1) { padding-bottom: 7em; } }
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+
+
+
