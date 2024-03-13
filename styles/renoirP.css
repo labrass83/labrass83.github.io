@@ -1,0 +1,25 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--bali);
+        --color2: var(--whitepink); 
+        --dkcolor1: var(--tundra);
+        --dkcolor2: var(--rosepink); }
+
+main { background-position: left top;
+    background-image: url(/images/renoirP/bgpic.jpg); }
+#materials li { padding: 1vh 6vw;  }
+#materials a { margin-top: 2vh; color: var(--wheat); text-shadow: var(--bali); } 
+#materials a:hover { color: var(--paleyellow); text-shadow: var(--tundra); } 
+#materials a:nth-last-child(1) { padding-bottom: 2em; }
+
+@media only screen and (min-width: 800px) {    
+    #materials h1 { font-size: 2em; }
+    #materials a { font-size: 1.8em; } }
+@media only screen and (min-width: 1024px) { 
+    #materials h1 { font-size: 2.2em; }
+    #materials a { font-size: 2em; } }
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+
+
+

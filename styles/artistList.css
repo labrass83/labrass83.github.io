@@ -28,13 +28,14 @@ p span /* "Meet the Masters" */ { color: var(--brightblue);}
 ul { list-style-type: none; /* no bullets */ 
     display: flex; flex-direction: column; flex-wrap: nowrap; }
 li { padding-bottom: 2vh; color: var(--ltblue); font-size: 10vw; }
-#use { padding-bottom: 3vh; }
+#use { padding-bottom: 3vh; color: var(--brightpink); }
 #progress { font-size: 7.5vw; color: var(--brightpink); padding-bottom: 3vh; }
-#progress span { color: var( --ltblue); }
+#progress span { color: var(--ltblue); }
 a { text-decoration: none; /* no underline */ 
     color: var(--brightblue); }
 a:active { /* appearance when clicked */ font-weight: bold; }
 a:hover { color: var(--dkgreen); }
+#mb span { font-size: 2.2vw; }
     
 @media only screen and (min-width: 150px) {
     #titleHeader #faHeading { font-size: .9em; }
