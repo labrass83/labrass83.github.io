@@ -1,0 +1,12 @@
+:root
+    {   /* this artist's colors:  */
+        --mheadingcolor: var(--vydkorange);
+        --color1: var(--limegreen);
+        --color2: var(--orangetan); 
+        --dkcolor1: var(--green);
+        --dkcolor2: var(--dkorange); }
+        
+main { background-position: 50% left;
+    background-image: url(/images/gauguinP/bgpic.jpg); } 
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */

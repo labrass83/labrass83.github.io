@@ -1,5 +1,6 @@
 :root
     {   /* this artist's colors:  */
+        --mheadingcolor: var(--orangetan);
         --color1: var(--peachpink); 
         --dkcolor1: var(--rosepink); 
         --color2: var(--springrain);

@@ -1,8 +1,9 @@
 :root
     {   /* this artist's colors:  */
+        --mheadingcolor: var(--dkorangetan);
         --color1: var(--gold);
         --color2: var(--skyblue); 
-        --dkcolor1: var(--dkmustard);
+        --dkcolor1: var(--dkgold);
         --dkcolor2: var(--teal); }
 
 main { background-position: left top;

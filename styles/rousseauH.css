@@ -1,0 +1,12 @@
+:root {    /* this artist's colors:  */
+    --mheadingcolor: var(--dkorange);
+    --color1: var(--greensmoke);
+    --color2: var(--pancho); 
+    --dkcolor1: var(--vydkgreen);
+    --dkcolor2: var(--dkmustard); }
+
+main { background-position: left 50% bottom 100%;
+    background-image: url(/images/rousseauH/bgpic.jpg); }
+#materials a:hover { color: var(--dkorangetan); }}
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */

@@ -1,5 +1,6 @@
 :root
     {   /* this artist's colors:  */
+        --mheadingcolor: var(--peachpink);
         --color1: var(--bali);
         --color2: var(--whitepink); 
         --dkcolor1: var(--tundra);
@@ -9,7 +10,7 @@ main { background-position: left top;
     background-image: url(/images/renoirP/bgpic.jpg); }
 #materials li { padding: 1vh 6vw;  }
 #materials a { margin-top: 2vh; color: var(--wheat); text-shadow: var(--bali); } 
-#materials a:hover { color: var(--paleyellow); text-shadow: var(--tundra); } 
+#materials a:hover { color: var(--bali); text-shadow: var(--tundra); } 
 #materials a:nth-last-child(1) { padding-bottom: 2em; }
 
 @media only screen and (min-width: 800px) {    

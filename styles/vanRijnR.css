@@ -1,13 +1,14 @@
 :root
     {   /* this artist's colors:  */
+        --mheadingcolor: var(--orangetan);
         --color1: var(--bali);
         --color2: var(--tan); 
         --dkcolor1: var(--dkblue);
-        --dkcolor2: var(--dkmustard); }
+        --dkcolor2: var(--ltbrown); }
         
 main { background-position: 10% 0; 
     background-image: url(/images/vanRijnR/bgpic.jpg); }  
-#materials a:hover { color: var(--dkcolor2); }
+#materials a:hover { color: var(--ltblue); }
 
 /* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
 @media only screen and (max-width: 414px) {

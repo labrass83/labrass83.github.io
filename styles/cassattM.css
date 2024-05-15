@@ -1,0 +1,19 @@
+:root
+    {   /* this artist's colors:  */
+        --mheadingcolor: var(--vydkorange);
+        --color1: var(--peachpink);
+        --color2: var(--peachpink); 
+        --dkcolor1: var(--vydkgreen);
+        --dkcolor2: var(--green); }
+        
+main { background-position: top right;
+    background-image: url(/images/cassattM/bgpic.jpg); } 
+#materials h1 { margin-top: 2%; }
+#title { text-shadow: .05em .1em .05em var(--vydkorange); }
+h2 { text-shadow: .03em .05em .05em var(--vydkorange); }
+
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
+@media only screen and (min-width: 800px) {
+    #materials h1 { margin-top: 0; } 
+    #materials { margin-top: 5%; } }

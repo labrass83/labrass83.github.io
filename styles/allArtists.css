@@ -21,8 +21,8 @@ main {
 #home, #aList { 
     text-decoration: none; 
     margin: .2em 0 .3em 6vw; padding: 0 15px;    
-    font-size: .75em; color: var(--color2); letter-spacing: .08em; 
-    text-shadow: .03em .05em .06em var(--dkcolor2); font-weight: bold;
+    font-size: .75em; color: var(--dkcolor2); letter-spacing: .08em; 
+    text-shadow: .03em .05em .06em var(--color2); font-weight: bold;
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -52,15 +52,15 @@ main {
 #materials { position: relative; z-index: 2; } 
 #materials h1 { 
     margin-top: 2vh; padding: 2vh 6vw;
-    color: var(--color1); font-size: 1.5em; letter-spacing: .09em;
+    color: var(--mheadingcolor); font-size: 1.5em; letter-spacing: .09em;
     text-shadow: .03em .05em .05em var(--wheat); }
 #materials li { padding: 1.5vh 6vw; list-style-type: none; }
 #materials a { 
     text-decoration-line: none; 
-    font-size: 1.3em; font-weight: bold; 
+    font-size: 1.25em; font-weight: bold; 
     letter-spacing: .05em; color: var(--color2); 
     text-shadow: .03em .05em .05em var(--wheat); }
-#materials a:hover { color: var(--color1); }
+#materials a:hover { color: var(--dkcolor1); }
 #materials a:nth-last-child(1) { padding-bottom: 3em; }
 
 h2 { padding: .2em 0 .3em 0; font-size: .9em; font-family:'Times';

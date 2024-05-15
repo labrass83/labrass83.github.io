@@ -1,5 +1,6 @@
 :root
     {   /* this artist's colors:  */
+        --mheadingcolor: var(--orangetan);
         --color1: var(--skyblue);
         --color2: var(--pink); 
         --dkcolor1: var(--dkteal);
@@ -11,7 +12,7 @@ main { background-position: left top;
 #materials li { padding: 1vh 6vw;  }
 #materials a { margin-top: 2vh; color: var(--dkpink); 
     text-shadow: var(--teal); } 
-#materials a:hover { color: var(--dkteal); text-shadow: var(--teal); } 
+#materials a:hover { color: var(--limegreen); text-shadow: var(--teal); } 
 #materials a:nth-last-child(1) { padding-bottom: 2em; }
 h2 { color: var(--teal); }
 

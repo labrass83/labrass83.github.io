@@ -5,7 +5,8 @@
         --lgtorange: #ffb668; 
         --orangetan: #ef9c64; 
         --dkorangetan: #d47a3e; 
-        --dkorange: #cc510f; 
+        --dkorange: #cc510f;
+        --vydkorange: #aa3d03;  
     --red: #bf2525; 
         --dkred: #8b0808; 
         --redbrown: #db0a6869; 
@@ -24,6 +25,8 @@
         --dkmustard: rgb(136, 111, 1);
     --green: rgb(25, 112, 3);
         --dkgreen: rgb(16, 74, 2);
+        --vydkgreen: rgb(10, 49, 0);
+        --greensmoke: #a7ab79;
         --limegreen: rgb(186, 241, 90); 
         --mintgreen: rgb(203, 240, 175); 
         --mintgreen6: rgba(203, 240, 175, .6);  
