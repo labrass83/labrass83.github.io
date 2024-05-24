@@ -1,0 +1,12 @@
+:root
+    {   /* this artist's colors:  */
+        --mheadingcolor: var(--teal);
+        --color1: var(--orange);
+        --color2: var(--gold); 
+        --dkcolor1: var(--dkorange);
+        --dkcolor2: var(--dkteal); }
+        
+main { background-position: top right;
+    background-image: url(/images/vanGoghV/bgpic.jpg); } 
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
