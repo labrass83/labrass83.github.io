@@ -9,7 +9,7 @@
         --vydkorange: #aa3d03;  
     --red: #bf2525; 
         --dkred: #8b0808; 
-        --redbrown: #db0a6869; 
+        --redbrown: #4e0224e3; 
     --pink: rgb(253, 136, 234);
         --whitepink: rgb(251, 210, 244);
         --peachpink: rgb(251, 169, 169);
@@ -53,7 +53,8 @@
         --transparentwheat6: rgba(243, 240, 199, 0.6);    
         --transparentwheat3: rgba(243, 240, 199, 0.3);
     --ltbrown: rgb(129, 115, 80);
-        --tan: rgb(229, 180, 135);    
+        --tan: rgb(229, 180, 135);          
+        --amber: rgb(112, 62, 16);   
         --mbrown: rgb(94, 83, 56);
         --dkbrown: rgb(62, 52, 27);
         --pancho: #ecd0ab;

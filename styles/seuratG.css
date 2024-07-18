@@ -1,0 +1,14 @@
+:root
+    {   /* this artist's colors:  */
+        --color1: var(--green);
+        --dkcolor1: var(--dkgreen);
+        --mheadingcolor: var(--bali);
+        --color2: var(--gold); 
+        --dkcolor2: var(--amber); }
+
+        
+main { background-position: top right;
+    background-image: url(/images/seuratG/bgpic.jpg); } 
+
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
