@@ -1,0 +1,37 @@
+:root
+    {   /* this artist's colors: */ /* 
+#home, #aList { color: dkcolor2; text-shadow: color2; border: dkcolor2; }
+#links a:hover { color: wheat); background-color: dkcolor2; }
+#title { color: color1; text-shadow: dkcolor1; border-top/bot: color1); } 
+#freeRules { color: dkcolor2; border-top/bot: color2; }
+#freeRules span { color: color2; text-shadow: dkcolor2; }
+#materials h1 { color: mheadingcolor; text-shadow: wheat; }
+#materials a { color: color2; text-shadow: wheat; }
+#materials a:hover { color: dkcolor1; }
+h2 { color: color1; text-shadow: dkcolor1; border-top/bot: color1; 
+    background-color: wheat; } */
+
+--color1: var(--dkorange);
+    /*  #title { color; border-top/bot}, 
+        h2 { border-top/bot } */
+--dkcolor1: var(--lgtorange);
+    /*  #title { text-shadow }, 
+        #materials a:hover { color }
+        h2 { text-shadow } */
+--mheadingcolor: white;
+    /*  #materials h1 { color } */
+--color2: var(--dkblue); 
+    /*  #home, #aList { text-shadow }
+        #freeRules { border-top/bot }, #freeRules span { color }
+        #materials a { color }  */
+--dkcolor2: var(--ltblue); 
+    /*  #home, #aList { color; border }, #links a:hover { background-color }
+        #freeRules { color }, #freeRules span { text-shadow } */ }
+
+main { background-image: url(/images/remingtonF/bgpic.jpg); } 
+
+@media only screen and (max-width: 800px) {
+    main { background-position: 33%; } }
+
+
+/* allArtists.css breaks: 260, 320, 414, 480, 800, 1024, 1600, 1920. */
